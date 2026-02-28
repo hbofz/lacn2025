@@ -2430,7 +2430,7 @@ exper_learning_data |>
                     position = "dodge")+
    geom_text(
     aes(label = round(exper,0)),
-    colour = "white", size = 8,
+    colour = "white", size = 4,
     vjust = 1.4, position = position_dodge(.9)
     )+
   ggplot2::scale_x_discrete(
@@ -2449,15 +2449,15 @@ exper_learning_data |>
     )
   )+
   ggplot2::theme(
-    plot.caption = ggplot2::element_text(size = 20, 
+    plot.caption = ggplot2::element_text(size = 12, 
                                          margin = ggplot2::margin(t = "10")),
-    text = ggplot2::element_text(size = 25, family = params$plotfont,
+    text = ggplot2::element_text(size = 22, family = params$plotfont,
                                  lineheight = .5),
-    axis.text.x = ggplot2::element_text(size = 25, colour = "black"),
+    axis.text.x = ggplot2::element_text(size = 14, colour = "black"),
     panel.background = ggplot2::element_blank(),
     axis.ticks = ggplot2::element_blank(),
     legend.position = "top",
-    legend.text = element_text(size = 16),
+    legend.text = element_text(size = 14),
     legend.title = ggplot2::element_blank()
   )
 
@@ -2726,6 +2726,6 @@ gift_data |>
 
 <hr/>
 
-**Published May 2025, Data Analysis completed by St Olaf College**
+**Published May 2026, Data Analysis completed by Hamzah Azzam**
 
 
