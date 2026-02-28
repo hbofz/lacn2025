@@ -2347,7 +2347,6 @@ sengage_type_data |>
             vjust = 1.4, position = position_dodge(.9)
             )+
   ggplot2::scale_y_continuous(limits = c(0,100), breaks = c(0,25,50,75,100))+
-  scale_x_discrete(labels = function(x) stringr::str_wrap(x, width = 15))+
   ggplot2::labs(
     y = "Engagement (%)",
     x = NULL,
@@ -2361,10 +2360,9 @@ sengage_type_data |>
     )
   )+
   ggplot2::theme(
-    text = ggplot2::element_text(size = 25, family = params$plotfont,
-                                 lineheight = .5),
+    text = ggplot2::element_text(size = 22, family = params$plotfont),
     axis.ticks = ggplot2::element_blank(),
-    axis.text.x = ggplot2::element_text(size = 16, colour = "black"),
+    axis.text.x = ggplot2::element_text(size = 12, colour = "black", angle = 25, hjust = 1),
     panel.background = ggplot2::element_blank(),
     legend.title = ggplot2::element_blank(),
     legend.text = element_text(size = 16),
@@ -2433,9 +2431,6 @@ exper_learning_data |>
     colour = "white", size = 4,
     vjust = 1.4, position = position_dodge(.9)
     )+
-  ggplot2::scale_x_discrete(
-    labels = function(x) stringr::str_wrap(x, width = 12)
-    )+
   ggplot2::labs(
     x = NULL,
     y = "% of Students",
@@ -2449,11 +2444,10 @@ exper_learning_data |>
     )
   )+
   ggplot2::theme(
-    plot.caption = ggplot2::element_text(size = 12, 
+    plot.caption = ggplot2::element_text(size = 10, 
                                          margin = ggplot2::margin(t = "10")),
-    text = ggplot2::element_text(size = 22, family = params$plotfont,
-                                 lineheight = .5),
-    axis.text.x = ggplot2::element_text(size = 14, colour = "black"),
+    text = ggplot2::element_text(size = 22, family = params$plotfont),
+    axis.text.x = ggplot2::element_text(size = 12, colour = "black", angle = 25, hjust = 1),
     panel.background = ggplot2::element_blank(),
     axis.ticks = ggplot2::element_blank(),
     legend.position = "top",
@@ -2726,6 +2720,6 @@ gift_data |>
 
 <hr/>
 
-**Published May 2026, Data Analysis completed by Hamzah Azzam**
+**Published Feb 2026, Data Analysis completed by St Olaf College**
 
 
