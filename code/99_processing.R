@@ -1,8 +1,9 @@
 
 #### -------- ANALYZE responses ----- ####
 
-
-all_questions <- unique(question_type$q_type)[c(2,4,5,6)] #ommiting ranking
+# Select only the types that have analysis functions (exclude text and ranking)
+all_questions <- unique(question_type$q_type)
+all_questions <- all_questions[all_questions %in% c("single", "multi", "matrix", "continuous")]
 
 all_list <- map(all_questions,
                 ~ analyzeFunction(

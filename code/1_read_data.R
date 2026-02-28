@@ -2,18 +2,18 @@ library(tidyverse)
 
 #### ---------- LOAD DATA ------------- ####
 list.files("data")
-# lacn_location <- file.path("data","OpsSurveyRawData4.14.22.csv")
 
-lacn_location <- file.path("data","OpsSurveyRawData5.28.25.csv")
+lacn_location <- file.path("data","OpsSurveyRawData2.27.26.csv")
 
 # Read in the data
 
 # the line below also removes duplicate columns from the master data
+# Columns 239:250 are duplicated "Percent of undergraduate enrollment that are women (DRVEF2023)"
 # if the questions/ number of questions change, then you might have to change the numbers
 # be sure to use `identical(df1$colname, df2$colname)` to verify 
-# that the columns are indeeed duplicated
+# that the columns are indeed duplicated
 
-lacn_master <- readr::read_csv(lacn_location, col_select = c(-(234:243))) 
+lacn_master <- readr::read_csv(lacn_location, col_select = c(-(239:250))) 
 
 # Update column names so that the numeric columns start with Q and not a number
 colnames(lacn_master) <- ifelse(stringr::str_detect(colnames(lacn_master), "^[0-9]"), stringr::str_c("Q", colnames(lacn_master)), colnames(lacn_master))
@@ -32,20 +32,9 @@ lacn_master <- lacn_master |>
   )
 
 
-# specify google sheets location
-ss <- "1e_5OqPASswQ_5BQmehN_PABwaZtgoYl4xOqGXlgT3uU"
-
-googlesheets4::gs4_auth(email = "malla1@stolaf.edu", token=ss)
-
-# Authorize the API and check if you are logged using: 
-# googlesheets4::gs4_user()
-# should say --> Logged in to googlesheets4 as <your email>
-
-
-
 #### ---------- CREATE RESPONSE KEY ----------- ####
 response_key_messy <- lacn_master |>
- dplyr::select(Q1_1:Q28) |>  #was Q:25 before
+ dplyr::select(Q1_1:Q28) |>
  dplyr::slice(1L)|>
  tidyr::pivot_longer(
    cols = dplyr::everything(),
@@ -58,27 +47,15 @@ response_key_messy <- lacn_master |>
                  sep = "_", extra = "drop", fill = "right", remove = FALSE)
 
 
-#---------------ONLY RUN ONCE----------------------------------
- #send response_key_messy to google sheets for manual clean-up
-# googlesheets4::sheet_write(ss = ss,
-#                        response_key_messy,
- #                         sheet = 'response_key_25')
-#--------------------------------------------------------------
+# Save response_key_messy to CSV for review
+readr::write_csv(response_key_messy, file.path("data/response_key_messy_26.csv"))
 
-
-# retrieve manually cleaned response_key from google sheets
-response_key <- googlesheets4::read_sheet(ss = ss,
-                                         sheet = "response_key_25")
-
-# save response key to csv in data subdirectory
-readr::write_csv(response_key, file.path("data/response_key_25.csv"))
-
+# Load the cleaned response_key from local CSV
+# (Adapted from last year's response_key_25.csv — no Google Sheets needed)
+response_key <- readr::read_csv(file.path("data/response_key_26.csv"))
 
 
 #### REFERENCE TABLE of question types ####
-question_type <- googlesheets4::range_read(ss = "1e_5OqPASswQ_5BQmehN_PABwaZtgoYl4xOqGXlgT3uU",
-                                        sheet = "progress_25",
-                                        range = "A1:C29") |>
-  dplyr::rename(q_type = "# selections possible")
-
+# Load question_type from local CSV (no Google Sheets needed)
+question_type <- readr::read_csv(file.path("data/question_type_26.csv"))
 

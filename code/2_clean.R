@@ -27,9 +27,9 @@ names(question_list) <- question_type$unique
 #This is done because of the nature of starts_with(). For instance Q1 and Q10 are
 #identified as same questions. Hence the cleaning. 
 
-question_list$Q1 <- question_list$Q1[, 1:4]
-question_list$Q2 <- question_list$Q2[, 1:4]
-question_list$Q3 <- question_list$Q3[, 1:3] #technically not needed this year since there are only 25 questions. 
+question_list$Q1 <- question_list$Q1[, 1:5]  # Institution Name + Undergrad enrollment + Q1_1, Q1_3, Q1_2
+question_list$Q2 <- question_list$Q2[, 1:9]  # Institution Name + Undergrad enrollment + Q2_1 through Q2_6 + Q2_6_TEXT (multi-select in 2026)
+question_list$Q3 <- question_list$Q3[, 1:3]  # Institution Name + Undergrad enrollment + Q3
 
 
 

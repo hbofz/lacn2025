@@ -1,0 +1,29 @@
+unique,q_type,Notes
+Q1,text,Contact info
+Q2,multi,Reporting structure (multi-select in 2026)
+Q3,single,Steps from president
+Q4,text,Performance measures (free text)
+Q5,matrix,Student workers by role
+Q6,continuous,Professional staff counts/FTE
+Q7,matrix,Staff responsibility allocation
+Q8,multi,Services offered
+Q9,multi,Conferences attended by staff
+Q10,multi,Technologies/platforms used
+Q11,single,Career center name
+Q12,single,Career center reports to
+Q13,multi,Professional development
+Q14,single,Alumni services offered
+Q15,multi,Assessment methods
+Q16,single,First destination survey
+Q17,multi,Alumni services scope (treated as multi in reports)
+Q18,text,First destination: method
+Q19,matrix,Employer engagement activities
+Q20,matrix,Unique employers
+Q21,continuous,Class sizes
+Q22,matrix,Engagement - appointments
+Q23,matrix,Engagement - events
+Q24,continuous,Experiential learning %
+Q25,continuous,Operating budget
+Q26,matrix,External funding
+Q27,single,Share responses
+Q28,text,Confirmation

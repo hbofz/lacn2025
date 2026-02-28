@@ -1,0 +1,2881 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,1_1,1_2,2,2_6_TEXT,3,4_1,4_2,4_3,5_1_1,5_1_2,5_2_1,5_2_2,5_3_1,5_3_2,6_1_9,6_1_2,6_1_3,6_1_4,6_1_5,6_1_10,7_1_1,7_1_2,7_1_3,7_2_1,7_2_2,7_2_3,7_3_1,7_3_2,7_3_3,7_4_1,7_4_2,7_4_3,7_5_1,7_5_2,7_5_3,7_6_1,7_6_2,7_6_3,7_7_1,7_7_2,7_7_3,7_8_1,7_8_2,7_8_3,7_9_1,7_9_2,7_9_3,7_10_1,7_10_2,7_10_3,7_11_1,7_11_2,7_11_3,7_12_1,7_12_2,7_12_3,7_13_1,7_13_2,7_13_3,7_14_1,7_14_2,7_14_3,8_1,8_2,8_3,8_4,8_5,8_6,8_7,8_8,8_9,8_10,8_11,8_11_TEXT,9_1,9_3,9_4,9_5,9_6,9_7,9_8,9_10,9_11,9_12,9_13,9_13_TEXT,10_27,10_1,10_2,10_4,10_5,10_6,10_16,10_11,10_12,10_7,10_3,10_32,10_33,10_34,10_31,10_13,10_14,10_8,10_28,10_9,10_10,10_15,10_35,10_29,10_29_TEXT,11,12_1,12_2,12_3,12_4,12_4_TEXT,13,14,15,15_2_TEXT,16_1_1,16_1_2,16_2_1,16_2_2,16_3_1,16_3_2,16_4_1,16_4_2,16_5_1,16_5_2,16_6_1,16_6_2,17_1_1,17_1_2,17_2_1,17_2_2,17_3_1,17_3_2,17_4_1,17_4_2,18_1,18_2,18_3,18_4,19_1_1,19_1_2,19_2_1,19_2_2,19_3_1,19_3_2,19_4_1,19_4_2,19_5_1,19_5_2,19_6_1,19_6_2,20_1_5,20_1_2,20_1_3,20_1_4,20_2_5,20_2_2,20_2_3,20_2_4,20_3_5,20_3_2,20_3_3,20_3_4,20_4_5,20_4_2,20_4_3,20_4_4,20_5_5,20_5_2,20_5_3,20_5_4,21_1_1,21_2_1,21_3_1,21_4_1,21_5_1,21_6_1,22_1,22_4,22_2,23_1_1,23_1_2,23_1_5,23_2_1,23_2_2,23_2_5,23_3_1,23_3_2,23_3_5,24,25,FirstName,LastName,Email,ExternalDataReference,Institution Name,Bureau of Economic Analysis (BEA) regions (HD2021),Degree of urbanization (Urban-centric locale) (HD2021),Institution size category (HD2021),Value of endowment assets at the beginning of the fiscal year (F1920_F2),Percent admitted - total (DRVADM2020),Undergraduate enrollment (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Total  enrollment (DRVEF2020),Percent of full-time first-time undergraduates awarded any financial aid (SFA1920),Create New Field or Choose From Dropdown...
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"On behalf of the LACN Benchmarking Committee, thank you for taking the time to complete this requ... - Name of person completing this survey","On behalf of the LACN Benchmarking Committee, thank you for taking the time to complete this requ... - Institution",To whom do you report? - Selected Choice,To whom do you report? - Other: - Text,"How
+many steps removed from the institution’s president is the leadership (director) of your career center?","For the 2022-2023 academic year, which performance measures are most important to your senior leadership (for instance: student engagement, alumni engagement, internship participation, employer engagement, first destination knowledge rate or outcomes, etc.) - Measure 1","For the 2022-2023 academic year, which performance measures are most important to your senior leadership (for instance: student engagement, alumni engagement, internship participation, employer engagement, first destination knowledge rate or outcomes, etc.) - Measure 2","For the 2022-2023 academic year, which performance measures are most important to your senior leadership (for instance: student engagement, alumni engagement, internship participation, employer engagement, first destination knowledge rate or outcomes, etc.) - Measure 3","Using the chart below, please identify how many students (undergraduate and graduate) work in various roles within your office. If the answer is none for any specific response, please enter ""0."" - Students in paraprofessional roles (peer advisors) - Undergraduate","Using the chart below, please identify how many students (undergraduate and graduate) work in various roles within your office. If the answer is none for any specific response, please enter ""0."" - Students in paraprofessional roles (peer advisors) - Graduate","Using the chart below, please identify how many students (undergraduate and graduate) work in various roles within your office. If the answer is none for any specific response, please enter ""0."" - Students in administrative roles (front desk, marketing, ER, assessment, et... - Students in administrative roles (front desk, marketing, ER, assessment, etc.) - Undergraduate","Using the chart below, please identify how many students (undergraduate and graduate) work in various roles within your office. If the answer is none for any specific response, please enter ""0."" - Students in administrative roles (front desk, marketing, ER, assessment, et... - Students in administrative roles (front desk, marketing, ER, assessment, etc.) - Graduate","Using the chart below, please identify how many students (undergraduate and graduate) work in various roles within your office. If the answer is none for any specific response, please enter ""0."" - Students in ""hybrid"" roles (e.g., student workers have both paraprofessiona... - Students in ""hybrid"" roles (e.g., student workers have both paraprofessional and administrative duties) - Undergraduate","Using the chart below, please identify how many students (undergraduate and graduate) work in various roles within your office. If the answer is none for any specific response, please enter ""0."" - Students in ""hybrid"" roles (e.g., student workers have both paraprofessiona... - Students in ""hybrid"" roles (e.g., student workers have both paraprofessional and administrative duties) - Graduate","Using the chart below, please indicate the total number of professional staff (not students), as well as FT/PT breakdown and full-time equivalents (FTE):
+
+
+	Please include all open positions 
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers EXCEPT if necessary when reporting the total full-time equivalent (FTE)
+	If your response is ""none"" to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: Your office has 10 employees. If 8 work full-time (12 months) and 2 work part-time at 30/hours per week (12 months) the breakdown would be as follows:
+
+
+
+	
+		
+			 
+			Total # of staff (headcount)
+			#FT staff, full year
+
+			(12 months)
+			#FT staff, academic
+
+			year (or less than 12 months)
+			#PT staff, full year
+
+			(12 months)
+			#PT staff, academic
+
+			year (or less than 12 months)
+			Total FTE*
+		
+		
+			Professional staff
+			10
+			8
+			0
+			2
+			0 
+			9.5
+		
+	
+
+
+
+*Total FTE: 8 + .75 + .75 = 9.5
+
+We recognize that FTE is not often a straightforward figure; for example, you may have someone who works part-time on a 9, 10 or 11-month contract.  For assistance determining FTE, please consult with your Human Resources department. - Professional staff - Total # of staff (headcount)","Using the chart below, please indicate the total number of professional staff (not students), as well as FT/PT breakdown and full-time equivalents (FTE):
+
+
+	Please include all open positions 
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers EXCEPT if necessary when reporting the total full-time equivalent (FTE)
+	If your response is ""none"" to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: Your office has 10 employees. If 8 work full-time (12 months) and 2 work part-time at 30/hours per week (12 months) the breakdown would be as follows:
+
+
+
+	
+		
+			 
+			Total # of staff (headcount)
+			#FT staff, full year
+
+			(12 months)
+			#FT staff, academic
+
+			year (or less than 12 months)
+			#PT staff, full year
+
+			(12 months)
+			#PT staff, academic
+
+			year (or less than 12 months)
+			Total FTE*
+		
+		
+			Professional staff
+			10
+			8
+			0
+			2
+			0 
+			9.5
+		
+	
+
+
+
+*Total FTE: 8 + .75 + .75 = 9.5
+
+We recognize that FTE is not often a straightforward figure; for example, you may have someone who works part-time on a 9, 10 or 11-month contract.  For assistance determining FTE, please consult with your Human Resources department. - Professional staff - # FT staff, full year (12 months)","Using the chart below, please indicate the total number of professional staff (not students), as well as FT/PT breakdown and full-time equivalents (FTE):
+
+
+	Please include all open positions 
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers EXCEPT if necessary when reporting the total full-time equivalent (FTE)
+	If your response is ""none"" to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: Your office has 10 employees. If 8 work full-time (12 months) and 2 work part-time at 30/hours per week (12 months) the breakdown would be as follows:
+
+
+
+	
+		
+			 
+			Total # of staff (headcount)
+			#FT staff, full year
+
+			(12 months)
+			#FT staff, academic
+
+			year (or less than 12 months)
+			#PT staff, full year
+
+			(12 months)
+			#PT staff, academic
+
+			year (or less than 12 months)
+			Total FTE*
+		
+		
+			Professional staff
+			10
+			8
+			0
+			2
+			0 
+			9.5
+		
+	
+
+
+
+*Total FTE: 8 + .75 + .75 = 9.5
+
+We recognize that FTE is not often a straightforward figure; for example, you may have someone who works part-time on a 9, 10 or 11-month contract.  For assistance determining FTE, please consult with your Human Resources department. - Professional staff - # FT staff, academic year (or less than 12 months)","Using the chart below, please indicate the total number of professional staff (not students), as well as FT/PT breakdown and full-time equivalents (FTE):
+
+
+	Please include all open positions 
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers EXCEPT if necessary when reporting the total full-time equivalent (FTE)
+	If your response is ""none"" to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: Your office has 10 employees. If 8 work full-time (12 months) and 2 work part-time at 30/hours per week (12 months) the breakdown would be as follows:
+
+
+
+	
+		
+			 
+			Total # of staff (headcount)
+			#FT staff, full year
+
+			(12 months)
+			#FT staff, academic
+
+			year (or less than 12 months)
+			#PT staff, full year
+
+			(12 months)
+			#PT staff, academic
+
+			year (or less than 12 months)
+			Total FTE*
+		
+		
+			Professional staff
+			10
+			8
+			0
+			2
+			0 
+			9.5
+		
+	
+
+
+
+*Total FTE: 8 + .75 + .75 = 9.5
+
+We recognize that FTE is not often a straightforward figure; for example, you may have someone who works part-time on a 9, 10 or 11-month contract.  For assistance determining FTE, please consult with your Human Resources department. - Professional staff - # PT staff, full year (12 months)","Using the chart below, please indicate the total number of professional staff (not students), as well as FT/PT breakdown and full-time equivalents (FTE):
+
+
+	Please include all open positions 
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers EXCEPT if necessary when reporting the total full-time equivalent (FTE)
+	If your response is ""none"" to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: Your office has 10 employees. If 8 work full-time (12 months) and 2 work part-time at 30/hours per week (12 months) the breakdown would be as follows:
+
+
+
+	
+		
+			 
+			Total # of staff (headcount)
+			#FT staff, full year
+
+			(12 months)
+			#FT staff, academic
+
+			year (or less than 12 months)
+			#PT staff, full year
+
+			(12 months)
+			#PT staff, academic
+
+			year (or less than 12 months)
+			Total FTE*
+		
+		
+			Professional staff
+			10
+			8
+			0
+			2
+			0 
+			9.5
+		
+	
+
+
+
+*Total FTE: 8 + .75 + .75 = 9.5
+
+We recognize that FTE is not often a straightforward figure; for example, you may have someone who works part-time on a 9, 10 or 11-month contract.  For assistance determining FTE, please consult with your Human Resources department. - Professional staff - # PT Staff, academic year (or less than 12 months)","Using the chart below, please indicate the total number of professional staff (not students), as well as FT/PT breakdown and full-time equivalents (FTE):
+
+
+	Please include all open positions 
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers EXCEPT if necessary when reporting the total full-time equivalent (FTE)
+	If your response is ""none"" to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: Your office has 10 employees. If 8 work full-time (12 months) and 2 work part-time at 30/hours per week (12 months) the breakdown would be as follows:
+
+
+
+	
+		
+			 
+			Total # of staff (headcount)
+			#FT staff, full year
+
+			(12 months)
+			#FT staff, academic
+
+			year (or less than 12 months)
+			#PT staff, full year
+
+			(12 months)
+			#PT staff, academic
+
+			year (or less than 12 months)
+			Total FTE*
+		
+		
+			Professional staff
+			10
+			8
+			0
+			2
+			0 
+			9.5
+		
+	
+
+
+
+*Total FTE: 8 + .75 + .75 = 9.5
+
+We recognize that FTE is not often a straightforward figure; for example, you may have someone who works part-time on a 9, 10 or 11-month contract.  For assistance determining FTE, please consult with your Human Resources department. - Professional staff - Total FTE","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Student Counseling/Advising - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Student Counseling/Advising - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Student Counseling/Advising - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Health Professions Advising - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Health Professions Advising - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Health Professions Advising - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Alumni Counseling/Advising - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Alumni Counseling/Advising - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Alumni Counseling/Advising - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Fellowship Advising - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Fellowship Advising - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Fellowship Advising - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Pre-Law Advising - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Pre-Law Advising - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Pre-Law Advising - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Program/Event Planning - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Program/Event Planning - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Program/Event Planning - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Marketing/Communications - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Marketing/Communications - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Marketing/Communications - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Employer Relations - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Employer Relations - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Employer Relations - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Internship Funding - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Internship Funding - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Internship Funding - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Office Management/Front Desk - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Office Management/Front Desk - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Office Management/Front Desk - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Supervision of Professional Staff - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Supervision of Professional Staff - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Supervision of Professional Staff - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Budget Management - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Budget Management - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Budget Management - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Technology Management - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Technology Management - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Technology Management - # PT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Assessment (Data, Outcomes, Program) - Total # of staff involved","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Assessment (Data, Outcomes, Program) - # FT staff primarily dedicated","The following question is designed to measure how your career center allocates responsibilities.  Please read the following instructions and examples carefully.  
+In the first column, please indicate how many professional staff (i.e., not students) devote ANY level of time to the functional areas listed. In the 2nd and 3rd columns, please indicate how many full-time and/or part-time staff are exclusively or primarily dedicated (e.g., this is one of their top three responsibilities) to each functional area.
+
+
+
+	Please do not enter fractions (e.g., 1/2) or numbers with decimal points (e.g., .5); enter only whole numbers. If your response is none to any portion of the question, please enter a ""0"". Do not leave blank.
+
+
+
+Example 1: If 8 people in your office are responsible for general counseling/advising and it is the primary responsibility of 4 individuals (3 are FT and 1 is PT) you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			General Counseling/Advising
+			8
+			3
+			1
+		
+	
+
+
+Example 2: If 10 people in your office are involved with Program/Event Planning but it is not in anyone's ""top 3"" responsibilities, you would complete that line item as follows:
+
+
+	
+		
+			 
+			Total # of staff
+
+			involved
+			#FT staff primarily
+
+			dedicated
+			#PT staff primarily
+
+			dedicated
+		
+		
+			Program/Event Planning
+			10
+			0
+			0 - Assessment (Data, Outcomes, Program) - # PT staff primarily dedicated",What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - Small College Career Alliance (SCCA),What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - National Association of Colleges & Employers (NACE),"What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - Regional Associations of Colleges & Employers (e.g., EACE, SWACE)",What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - National Career Development Association (NCDA),What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - National Society for Experiential Education (NSEE),What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - American College Personnel Association (ACPA),What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - Student Affairs Administrators in Higher Ed (NASPA),"What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - Health Professions Advising (e.g., National Association of Advisors for the Health Professions)","What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - Pre-Law Advising (e.g., NAPLA)","What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - Fellowship Advising (e.g., National Association of Fellowships Advisors)",What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Selected Choice - Other:,What national or regional professional conferences or sponsored workshops are typically attended by staff? Select all that apply. - Other: - Text,Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Internship advising/programs/placements,Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Co-op placements,"Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Job development, employer relations and recruiting",Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Federal work study,Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Student on-campus employment,Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Advising for graduate school admission,Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Pre-med/health school advising,Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Pre-law advising,"Please indicate all the services that your office offers to undergraduate students. - Selected Choice - National/international fellowship advising (e.g., Watson, Fulbright)",Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Community service/service-learning,Please indicate all the services that your office offers to undergraduate students. - Selected Choice - Other:,Please indicate all the services that your office offers to undergraduate students. - Other: - Text,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Alumni and/or parent delivered programs,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Career class/program (for credit),"Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Workshops/presentations to students in academic courses (excluding ""career courses"")","Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Career fairs (large scale, traditional)",Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Career treks/immersion trips (lasting a least one day),Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Employer delivered workshops,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Employer interviews,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Professional staff delivered workshops,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Student staff delivered workshops,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Employer information sessions,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Large scale program/event specifically for FIRST YEARS (at least 10% of the class participates),Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Large scale program/event specifically for SOPHOMORES (at least 10% of the class participates),Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Large scale program/event specifically for JUNIORS (at least 10% of the class participates),Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Large scale program/event specifically for SENIORS (at least 10% of the class participates),"Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Identity based programming (BIPOC, first generation, LGBTQIA+, etc.)",Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Industry/sector/career community specific events,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Job shadow program,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Large-scale practice interview program,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Mentoring program,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Parent/family weekend programs,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Pre-orientation program,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Student/alumni networking events,Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Alumni networking platform and/or alumni directory (maintained by career services),Please indicate all the types of programs that your office offers to undergraduate students - Selected Choice - Other:,Please indicate all the types of programs that your office offers to undergraduate students - Other: - Text,Do you provide services to graduate students?,Please identify those services offered to graduate students. - Selected Choice - Career counseling/advising,"Please identify those services offered to graduate students. - Selected Choice - Job development, employer relations & recruiting",Please identify those services offered to graduate students. - Selected Choice - Fellowship advising,Please identify those services offered to graduate students. - Selected Choice - Other,Please identify those services offered to graduate students. - Other - Text,Do you provide services to alumni?,"If so, please identify the scope of services offered to alumni.",Do you charge a fee for service to alumni? - Selected Choice,Do you charge a fee for service to alumni? - Yes. Please describe: - Text,"Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of career fairs offered on-campus or only for students at your insti... - Number of career fairs offered on-campus or only for students at your institution (not including grad/prof school fairs) - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of career fairs offered on-campus or only for students at your insti... - Number of career fairs offered on-campus or only for students at your institution (not including grad/prof school fairs) - # Virtual","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of information sessions offered by employers (coordinated by your of... - Number of information sessions offered by employers (coordinated by your office) - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of information sessions offered by employers (coordinated by your of... - Number of information sessions offered by employers (coordinated by your office) - # Virtual","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of interviews conducted on-campus or virtual interviews coordinated... - Number of interviews conducted on-campus or virtual interviews coordinated by your office (total number, not unique students) *record interviews affiliated with consortia/off-campus events below - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of interviews conducted on-campus or virtual interviews coordinated... - Number of interviews conducted on-campus or virtual interviews coordinated by your office (total number, not unique students) *record interviews affiliated with consortia/off-campus events below - # Virtual","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of interviews conducted through consortia/off-campus events (total n... - Number of interviews conducted through consortia/off-campus events (total number, not unique students) - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of interviews conducted through consortia/off-campus events (total n... - Number of interviews conducted through consortia/off-campus events (total number, not unique students) - # Virtual","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of career ""treks"" (immersion trips lasting at least one day) - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of career ""treks"" (immersion trips lasting at least one day) - # Virtual","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of job shadows (total number, not unique students) - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Employer Relations Activities did your career center host?
+
+  
+
+
+	Please include only those activities that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of job shadows (total number, not unique students) - # Virtual","Reporting from your 2021-22 academic year data, how many of the following Unique Employers did your career center engage with?
+
+
+	Please include only those engagements that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option.
+	Please only count a specific employer multiple times IF that employer returns to campus more than once to recruit for different positions/divisions. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of employers who attended career fairs offered on-campus or only for... - Number of employers who attended career fairs offered on-campus or only for students at your institution (not including graduate/professional school fairs) - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Unique Employers did your career center engage with?
+
+
+	Please include only those engagements that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option.
+	Please only count a specific employer multiple times IF that employer returns to campus more than once to recruit for different positions/divisions. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of employers who attended career fairs offered on-campus or only for... - Number of employers who attended career fairs offered on-campus or only for students at your institution (not including graduate/professional school fairs) - # Virtual","Reporting from your 2021-22 academic year data, how many of the following Unique Employers did your career center engage with?
+
+
+	Please include only those engagements that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option.
+	Please only count a specific employer multiple times IF that employer returns to campus more than once to recruit for different positions/divisions. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of employers who offered information sessions coordinated by your of... - Number of employers who offered information sessions coordinated by your office - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Unique Employers did your career center engage with?
+
+
+	Please include only those engagements that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option.
+	Please only count a specific employer multiple times IF that employer returns to campus more than once to recruit for different positions/divisions. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of employers who offered information sessions coordinated by your of... - Number of employers who offered information sessions coordinated by your office - # Virtual","Reporting from your 2021-22 academic year data, how many of the following Unique Employers did your career center engage with?
+
+
+	Please include only those engagements that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option.
+	Please only count a specific employer multiple times IF that employer returns to campus more than once to recruit for different positions/divisions. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of employers who conducted interviews on-campus or virtual interview... - Number of employers who conducted interviews on-campus or virtual interviews coordinated by your office - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Unique Employers did your career center engage with?
+
+
+	Please include only those engagements that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option.
+	Please only count a specific employer multiple times IF that employer returns to campus more than once to recruit for different positions/divisions. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of employers who conducted interviews on-campus or virtual interview... - Number of employers who conducted interviews on-campus or virtual interviews coordinated by your office - # Virtual","Reporting from your 2021-22 academic year data, how many of the following Unique Employers did your career center engage with?
+
+
+	Please include only those engagements that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option.
+	Please only count a specific employer multiple times IF that employer returns to campus more than once to recruit for different positions/divisions. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of employers who conducted interviews through consortia/off-campus e... - Number of employers who conducted interviews through consortia/off-campus events - # On-campus","Reporting from your 2021-22 academic year data, how many of the following Unique Employers did your career center engage with?
+
+
+	Please include only those engagements that were coordinated by your staff.
+	Please include both ""virtual"" and on-campus numbers. We recognize that not all items below will having a corresponding ""virtual"" option.
+	Please only count a specific employer multiple times IF that employer returns to campus more than once to recruit for different positions/divisions. 
+	If your institution tracks alumnae/i employers separately, please combine those figures with your non-alumnae/i employer data.
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Number of employers who conducted interviews through consortia/off-campus e... - Number of employers who conducted interviews through consortia/off-campus events - # Virtual","For the academic year 2021-22, please indicate the total undergraduate class size for the following: - First Years","For the academic year 2021-22, please indicate the total undergraduate class size for the following: - Sophomores","For the academic year 2021-22, please indicate the total undergraduate class size for the following: - Juniors","For the academic year 2021-22, please indicate the total undergraduate class size for the following: - Seniors","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with first-year students by professional staff - Total # of appointments (in-person, phone, video chat)","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with first-year students by professional staff - Total # of email consultations","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with sophomore students by professional staff - Total # of appointments (in-person, phone, video chat)","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with sophomore students by professional staff - Total # of email consultations","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with junior students by professional staff - Total # of appointments (in-person, phone, video chat)","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with junior students by professional staff - Total # of email consultations","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with senior students by professional staff - Total # of appointments (in-person, phone, video chat)","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with senior students by professional staff - Total # of email consultations","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - TOTAL #  appointments with students by professional staff - Total # of appointments (in-person, phone, video chat)","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - TOTAL #  appointments with students by professional staff - Total # of email consultations","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with alumni by professional staff - Total # of appointments (in-person, phone, video chat)","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for total numbers/volume of appointments (including in-person, drop-in, video chat or phone) and email consultations that professional staff had with students and alumni.
+
+
+	If you do not know the answer to or do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - # appointments with alumni by professional staff - Total # of email consultations","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - First-Year - % engaged through appointment with professional staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - First-Year - % engaged through appointment with peer ""advisor"" staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - First-Year - % engaged through programs and events","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - First-Year - Total % of class engaged","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Sophomore - % engaged through appointment with professional staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Sophomore - % engaged through appointment with peer ""advisor"" staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Sophomore - % engaged through programs and events","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Sophomore - Total % of class engaged","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Junior - % engaged through appointment with professional staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Junior - % engaged through appointment with peer ""advisor"" staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Junior - % engaged through programs and events","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Junior - Total % of class engaged","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Senior - % engaged through appointment with professional staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Senior - % engaged through appointment with peer ""advisor"" staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Senior - % engaged through programs and events","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - Senior - Total % of class engaged","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - TOTAL (all classes) - % engaged through appointment with professional staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - TOTAL (all classes) - % engaged through appointment with peer ""advisor"" staff","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - TOTAL (all classes) - % engaged through programs and events","Please reflect the 2021-22 academic year data in your answers. In this question, we are looking for the percentage of students in a particular class year who engaged with the career center through appointments (professional & peer staff) and events (workshops, programs, info sessions, etc.).
+
+
+	To determine ""% engaged"" values, divide the number of unique students engaged by the total number of students in that class. 
+	If you do not know the answer to or do not track a particular data point, please leave it blank; please do not include estimates or guesses. - TOTAL (all classes) - Total % of class engaged","What percentage of your 2022 graduates completed the following type of experience by graduation?
+
+
+	If you do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Internship (including pre-licensure field experience, NOT including mentore... - Internship (including pre-licensure field experience, NOT including mentored undergraduate research) - %","What percentage of your 2022 graduates completed the following type of experience by graduation?
+
+
+	If you do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Mentored research experience - %","What percentage of your 2022 graduates completed the following type of experience by graduation?
+
+
+	If you do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Internship for academic credit - %","What percentage of your 2022 graduates completed the following type of experience by graduation?
+
+
+	If you do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Internship funded by your institution - %","What percentage of your 2022 graduates completed the following type of experience by graduation?
+
+
+	If you do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - Paid internship - %","What percentage of your 2022 graduates completed the following type of experience by graduation?
+
+
+	If you do not track a particular data point, please leave it blank; DO NOT include estimates or guesses. - ANY internship, pre-licensure field experience, mentored experience or simi... - ANY internship, pre-licensure field experience, mentored experience or similar professional experience - %","What is the total operating budget - minus staff compensation, but including student compensation - allocated to the career center for the most recently completed fiscal year?
+
+	If you share a budget with other offices, please include only the amount dedicated to the career center. For example,  if you share an operating budget with two other offices totaling $300,000 but the amount allotted specifically to the Career Center is $100,000, then enter the latter amount.
+	Please DO NOT include endowed funds or expendable gifts (you will enter these in the following question)
+	Please include student staff compensation but NOT staff compensation
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000) - Amount utilized for funded internships","What is the total operating budget - minus staff compensation, but including student compensation - allocated to the career center for the most recently completed fiscal year?
+
+	If you share a budget with other offices, please include only the amount dedicated to the career center. For example,  if you share an operating budget with two other offices totaling $300,000 but the amount allotted specifically to the Career Center is $100,000, then enter the latter amount.
+	Please DO NOT include endowed funds or expendable gifts (you will enter these in the following question)
+	Please include student staff compensation but NOT staff compensation
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000) - Amount utilized for student staff compensation","What is the total operating budget - minus staff compensation, but including student compensation - allocated to the career center for the most recently completed fiscal year?
+
+	If you share a budget with other offices, please include only the amount dedicated to the career center. For example,  if you share an operating budget with two other offices totaling $300,000 but the amount allotted specifically to the Career Center is $100,000, then enter the latter amount.
+	Please DO NOT include endowed funds or expendable gifts (you will enter these in the following question)
+	Please include student staff compensation but NOT staff compensation
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000) - Other","Please indicate the funding amounts outside of your operating budget that were available to your office to spend during the most recently completed fiscal year. Amounts should include funds available to support student internships, specific programs, etc.
+
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000)
+	Please do not leave blank - Income from endowed funds - Amount utilized for funded internships ($)","Please indicate the funding amounts outside of your operating budget that were available to your office to spend during the most recently completed fiscal year. Amounts should include funds available to support student internships, specific programs, etc.
+
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000)
+	Please do not leave blank - Income from endowed funds - Other ($)","Please indicate the funding amounts outside of your operating budget that were available to your office to spend during the most recently completed fiscal year. Amounts should include funds available to support student internships, specific programs, etc.
+
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000)
+	Please do not leave blank - Income from endowed funds - Total","Please indicate the funding amounts outside of your operating budget that were available to your office to spend during the most recently completed fiscal year. Amounts should include funds available to support student internships, specific programs, etc.
+
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000)
+	Please do not leave blank - Expendable gifts - Amount utilized for funded internships ($)","Please indicate the funding amounts outside of your operating budget that were available to your office to spend during the most recently completed fiscal year. Amounts should include funds available to support student internships, specific programs, etc.
+
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000)
+	Please do not leave blank - Expendable gifts - Other ($)","Please indicate the funding amounts outside of your operating budget that were available to your office to spend during the most recently completed fiscal year. Amounts should include funds available to support student internships, specific programs, etc.
+
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000)
+	Please do not leave blank - Expendable gifts - Total","Please indicate the funding amounts outside of your operating budget that were available to your office to spend during the most recently completed fiscal year. Amounts should include funds available to support student internships, specific programs, etc.
+
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000)
+	Please do not leave blank - Other - Amount utilized for funded internships ($)","Please indicate the funding amounts outside of your operating budget that were available to your office to spend during the most recently completed fiscal year. Amounts should include funds available to support student internships, specific programs, etc.
+
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000)
+	Please do not leave blank - Other - Other ($)","Please indicate the funding amounts outside of your operating budget that were available to your office to spend during the most recently completed fiscal year. Amounts should include funds available to support student internships, specific programs, etc.
+
+	Please enter a whole dollar amount without symbols, commas, or abbreviations (e.g., 95000)
+	Please do not leave blank - Other - Total",Can your survey responses be shared with other LACN respondents,"This is the final survey question. Selecting YES and NEXT will automatically submit your completed survey. If you have not completed the survey, please do not answer this question. Qualtrics will save the answers you've recorded so far for up to one month and you can return using the same link to complete.
+ 
+
+Have you completed this survey?",FirstName,LastName,Email,ExternalDataReference,Institution Name,Bureau of Economic Analysis (BEA) regions (HD2021),Degree of urbanization (Urban-centric locale) (HD2021),Institution size category (HD2021),Value of endowment assets at the beginning of the fiscal year (F1920_F2),Percent admitted - total (DRVADM2020),Undergraduate enrollment (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Percent of undergraduate enrollment that are women (DRVEF2020),Total  enrollment (DRVEF2020),Percent of full-time first-time undergraduates awarded any financial aid (SFA1920),Create New Field or Choose From Dropdown...
+"{""ImportId"":""startDate"",""timeZone"":""America/New_York""}","{""ImportId"":""endDate"",""timeZone"":""America/New_York""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/New_York""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID7_1""}","{""ImportId"":""QID7_2""}","{""ImportId"":""QID12""}","{""ImportId"":""QID12_6_TEXT""}","{""ImportId"":""QID13""}","{""ImportId"":""QID89_1""}","{""ImportId"":""QID89_2""}","{""ImportId"":""QID89_3""}","{""ImportId"":""QID9_1_1""}","{""ImportId"":""QID9_1_2""}","{""ImportId"":""QID9_2_1""}","{""ImportId"":""QID9_2_2""}","{""ImportId"":""QID9_3_1""}","{""ImportId"":""QID9_3_2""}","{""ImportId"":""QID18_5_9""}","{""ImportId"":""QID18_5_2""}","{""ImportId"":""QID18_5_3""}","{""ImportId"":""QID18_5_4""}","{""ImportId"":""QID18_5_5""}","{""ImportId"":""QID18_5_10""}","{""ImportId"":""QID19_1_1""}","{""ImportId"":""QID19_1_2""}","{""ImportId"":""QID19_1_3""}","{""ImportId"":""QID19_2_1""}","{""ImportId"":""QID19_2_2""}","{""ImportId"":""QID19_2_3""}","{""ImportId"":""QID19_3_1""}","{""ImportId"":""QID19_3_2""}","{""ImportId"":""QID19_3_3""}","{""ImportId"":""QID19_4_1""}","{""ImportId"":""QID19_4_2""}","{""ImportId"":""QID19_4_3""}","{""ImportId"":""QID19_5_1""}","{""ImportId"":""QID19_5_2""}","{""ImportId"":""QID19_5_3""}","{""ImportId"":""QID19_7_1""}","{""ImportId"":""QID19_7_2""}","{""ImportId"":""QID19_7_3""}","{""ImportId"":""QID19_8_1""}","{""ImportId"":""QID19_8_2""}","{""ImportId"":""QID19_8_3""}","{""ImportId"":""QID19_9_1""}","{""ImportId"":""QID19_9_2""}","{""ImportId"":""QID19_9_3""}","{""ImportId"":""QID19_10_1""}","{""ImportId"":""QID19_10_2""}","{""ImportId"":""QID19_10_3""}","{""ImportId"":""QID19_11_1""}","{""ImportId"":""QID19_11_2""}","{""ImportId"":""QID19_11_3""}","{""ImportId"":""QID19_12_1""}","{""ImportId"":""QID19_12_2""}","{""ImportId"":""QID19_12_3""}","{""ImportId"":""QID19_13_1""}","{""ImportId"":""QID19_13_2""}","{""ImportId"":""QID19_13_3""}","{""ImportId"":""QID19_14_1""}","{""ImportId"":""QID19_14_2""}","{""ImportId"":""QID19_14_3""}","{""ImportId"":""QID19_15_1""}","{""ImportId"":""QID19_15_2""}","{""ImportId"":""QID19_15_3""}","{""ImportId"":""QID20"",""choiceId"":""1""}","{""ImportId"":""QID20"",""choiceId"":""2""}","{""ImportId"":""QID20"",""choiceId"":""3""}","{""ImportId"":""QID20"",""choiceId"":""4""}","{""ImportId"":""QID20"",""choiceId"":""5""}","{""ImportId"":""QID20"",""choiceId"":""6""}","{""ImportId"":""QID20"",""choiceId"":""7""}","{""ImportId"":""QID20"",""choiceId"":""8""}","{""ImportId"":""QID20"",""choiceId"":""9""}","{""ImportId"":""QID20"",""choiceId"":""10""}","{""ImportId"":""QID20"",""choiceId"":""11""}","{""ImportId"":""QID20_11_TEXT""}","{""ImportId"":""QID21"",""choiceId"":""1""}","{""ImportId"":""QID21"",""choiceId"":""3""}","{""ImportId"":""QID21"",""choiceId"":""4""}","{""ImportId"":""QID21"",""choiceId"":""5""}","{""ImportId"":""QID21"",""choiceId"":""6""}","{""ImportId"":""QID21"",""choiceId"":""7""}","{""ImportId"":""QID21"",""choiceId"":""8""}","{""ImportId"":""QID21"",""choiceId"":""10""}","{""ImportId"":""QID21"",""choiceId"":""11""}","{""ImportId"":""QID21"",""choiceId"":""12""}","{""ImportId"":""QID21"",""choiceId"":""13""}","{""ImportId"":""QID21_13_TEXT""}","{""ImportId"":""QID56"",""choiceId"":""27""}","{""ImportId"":""QID56"",""choiceId"":""1""}","{""ImportId"":""QID56"",""choiceId"":""2""}","{""ImportId"":""QID56"",""choiceId"":""4""}","{""ImportId"":""QID56"",""choiceId"":""5""}","{""ImportId"":""QID56"",""choiceId"":""6""}","{""ImportId"":""QID56"",""choiceId"":""16""}","{""ImportId"":""QID56"",""choiceId"":""11""}","{""ImportId"":""QID56"",""choiceId"":""12""}","{""ImportId"":""QID56"",""choiceId"":""7""}","{""ImportId"":""QID56"",""choiceId"":""3""}","{""ImportId"":""QID56"",""choiceId"":""32""}","{""ImportId"":""QID56"",""choiceId"":""33""}","{""ImportId"":""QID56"",""choiceId"":""34""}","{""ImportId"":""QID56"",""choiceId"":""31""}","{""ImportId"":""QID56"",""choiceId"":""13""}","{""ImportId"":""QID56"",""choiceId"":""14""}","{""ImportId"":""QID56"",""choiceId"":""8""}","{""ImportId"":""QID56"",""choiceId"":""28""}","{""ImportId"":""QID56"",""choiceId"":""9""}","{""ImportId"":""QID56"",""choiceId"":""10""}","{""ImportId"":""QID56"",""choiceId"":""15""}","{""ImportId"":""QID56"",""choiceId"":""35""}","{""ImportId"":""QID56"",""choiceId"":""29""}","{""ImportId"":""QID56_29_TEXT""}","{""ImportId"":""QID22""}","{""ImportId"":""QID23"",""choiceId"":""1""}","{""ImportId"":""QID23"",""choiceId"":""2""}","{""ImportId"":""QID23"",""choiceId"":""3""}","{""ImportId"":""QID23"",""choiceId"":""4""}","{""ImportId"":""QID23_4_TEXT""}","{""ImportId"":""QID24""}","{""ImportId"":""QID25""}","{""ImportId"":""QID50""}","{""ImportId"":""QID50_2_TEXT""}","{""ImportId"":""QID80_1_1""}","{""ImportId"":""QID80_1_2""}","{""ImportId"":""QID80_2_1""}","{""ImportId"":""QID80_2_2""}","{""ImportId"":""QID80_4_1""}","{""ImportId"":""QID80_4_2""}","{""ImportId"":""QID80_5_1""}","{""ImportId"":""QID80_5_2""}","{""ImportId"":""QID80_6_1""}","{""ImportId"":""QID80_6_2""}","{""ImportId"":""QID80_7_1""}","{""ImportId"":""QID80_7_2""}","{""ImportId"":""QID81_1_1""}","{""ImportId"":""QID81_1_2""}","{""ImportId"":""QID81_2_1""}","{""ImportId"":""QID81_2_2""}","{""ImportId"":""QID81_4_1""}","{""ImportId"":""QID81_4_2""}","{""ImportId"":""QID81_5_1""}","{""ImportId"":""QID81_5_2""}","{""ImportId"":""QID70_1""}","{""ImportId"":""QID70_2""}","{""ImportId"":""QID70_3""}","{""ImportId"":""QID70_4""}","{""ImportId"":""QID65_1_1""}","{""ImportId"":""QID65_1_2""}","{""ImportId"":""QID65_4_1""}","{""ImportId"":""QID65_4_2""}","{""ImportId"":""QID65_5_1""}","{""ImportId"":""QID65_5_2""}","{""ImportId"":""QID65_6_1""}","{""ImportId"":""QID65_6_2""}","{""ImportId"":""QID65_7_1""}","{""ImportId"":""QID65_7_2""}","{""ImportId"":""QID65_8_1""}","{""ImportId"":""QID65_8_2""}","{""ImportId"":""QID66_1_5""}","{""ImportId"":""QID66_1_2""}","{""ImportId"":""QID66_1_3""}","{""ImportId"":""QID66_1_4""}","{""ImportId"":""QID66_2_5""}","{""ImportId"":""QID66_2_2""}","{""ImportId"":""QID66_2_3""}","{""ImportId"":""QID66_2_4""}","{""ImportId"":""QID66_3_5""}","{""ImportId"":""QID66_3_2""}","{""ImportId"":""QID66_3_3""}","{""ImportId"":""QID66_3_4""}","{""ImportId"":""QID66_4_5""}","{""ImportId"":""QID66_4_2""}","{""ImportId"":""QID66_4_3""}","{""ImportId"":""QID66_4_4""}","{""ImportId"":""QID66_6_5""}","{""ImportId"":""QID66_6_2""}","{""ImportId"":""QID66_6_3""}","{""ImportId"":""QID66_6_4""}","{""ImportId"":""QID67_1_1""}","{""ImportId"":""QID67_2_1""}","{""ImportId"":""QID67_3_1""}","{""ImportId"":""QID67_4_1""}","{""ImportId"":""QID67_5_1""}","{""ImportId"":""QID67_6_1""}","{""ImportId"":""QID41_1""}","{""ImportId"":""QID41_4""}","{""ImportId"":""QID41_2""}","{""ImportId"":""QID43_1_1""}","{""ImportId"":""QID43_1_2""}","{""ImportId"":""QID43_1_5""}","{""ImportId"":""QID43_2_1""}","{""ImportId"":""QID43_2_2""}","{""ImportId"":""QID43_2_5""}","{""ImportId"":""QID43_5_1""}","{""ImportId"":""QID43_5_2""}","{""ImportId"":""QID43_5_5""}","{""ImportId"":""QID90""}","{""ImportId"":""QID69""}","{""ImportId"":""FirstName""}","{""ImportId"":""LastName""}","{""ImportId"":""Email""}","{""ImportId"":""ExternalDataReference""}","{""ImportId"":""Institution Name""}","{""ImportId"":""Bureau of Economic Analysis (BEA) regions (HD""}","{""ImportId"":""Degree of urbanization (Urban-centric locale)""}","{""ImportId"":""Institution size category (HD2021)""}","{""ImportId"":""Value of endowment assets at the beginning of""}","{""ImportId"":""Percent admitted - total (DRVADM2020)""}","{""ImportId"":""Undergraduate enrollment (DRVEF2020)""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Percent of undergraduate enrollment that are""}","{""ImportId"":""Total  enrollment (DRVEF2020)""}","{""ImportId"":""Percent of full-time first-time undergraduate""}","{""ImportId"":""Create New Field or Choose From Dropdown...""}"
+2/28/2023 10:44,2/28/2023 12:37,IP Address,140.141.4.59,100,6793,TRUE,2/28/2023 12:37,R_AsUIyFikdG9gGfD,Kamerer,Laurie,kamererl@denison.edu,202523,40.0768,-82.5219,email,EN,Laurie Kamerer,Denison,Academic Affairs,,Reports directly to President’s Office,Career Outcomes,Graduate school outcomes,Prestigious fellowships,4,0,8,0,0,0,24,21,3,0,0,21,12,12,0,2,1,1,0,0,0,0,0,0,0,0,1,2,2,0,2,2,0,4,4,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,,National Association of Colleges & Employers (NACE),,,,,,"Health Professions Advising (e.g., National Association of Advisors for the Health Professions)","Pre-Law Advising (e.g., NAPLA)",,,,Internship advising/programs/placements,,"Job development, employer relations and recruiting",,Student on-campus employment,Advising for graduate school admission,Pre-med/health school advising,Pre-law advising,,,,,Alumni and/or parent delivered programs,,"Workshops/presentations to students in academic courses (excluding ""career courses"")","Career fairs (large scale, traditional)",Career treks/immersion trips (lasting a least one day),Employer delivered workshops,Employer interviews,Professional staff delivered workshops,,Employer information sessions,Large scale program/event specifically for FIRST YEARS (at least 10% of the class participates),Large scale program/event specifically for SOPHOMORES (at least 10% of the class participates),Large scale program/event specifically for JUNIORS (at least 10% of the class participates),Large scale program/event specifically for SENIORS (at least 10% of the class participates),"Identity based programming (BIPOC, first generation, LGBTQIA+, etc.)",Industry/sector/career community specific events,,,,Parent/family weekend programs,Pre-orientation program,Student/alumni networking events,,,,,,,,,,Yes,"Full service to ""young"" alumni",No,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,"No, please only share our data in aggregate",Yes,,,,202523,Denison University,3,23,2,887897630,28,2258,53,53,53,53,53,53,53,53,53,53,53,2258,99,
+3/9/2023 14:41,3/9/2023 14:49,IP Address,129.64.88.211,100,446,TRUE,3/9/2023 14:49,R_1hWEj8nOlElHFwj,Schlessigner,Jon,jschlesinger@brandeis.edu,165015,42.366,-71.2271,email,EN,Jon Schlesinger,Brandeis,Student Affairs,,2 steps removed,Engagement,Outcomes,DEI Efforts ,6,0,4,0,0,0,14,13,1,0,0,0,6,6,0,0,0,0,6,0,0,0,0,0,1,1,0,10,1,0,1,1,0,6,6,0,1,0,0,1,1,0,3,1,0,1,1,0,1,1,0,1,1,0,,National Association of Colleges & Employers (NACE),,National Career Development Association (NCDA),,,,,"Pre-Law Advising (e.g., NAPLA)",,,,Internship advising/programs/placements,,"Job development, employer relations and recruiting",,,Advising for graduate school admission,,Pre-law advising,,,,,Alumni and/or parent delivered programs,Career class/program (for credit),"Workshops/presentations to students in academic courses (excluding ""career courses"")","Career fairs (large scale, traditional)",,Employer delivered workshops,Employer interviews,Professional staff delivered workshops,Student staff delivered workshops,Employer information sessions,Large scale program/event specifically for FIRST YEARS (at least 10% of the class participates),,,,,Industry/sector/career community specific events,,,Mentoring program,Parent/family weekend programs,,Student/alumni networking events,Alumni networking platform and/or alumni directory (maintained by career services),,,No,,,,,,Yes,Full service to ALL alumni,No,,0,5,2,0,0,4,0,0,0,0,0,0,0,179,2,0,0,3,0,0,1007,778,787,1019,289,20,445,29,515,31,709,64,1958,144,491,57,20,9,38,51,33,13,25,75,38,7,34,90,34,8,53,92,37,9,53,78,,,,,,,0,61063,64192,203706,0,0,0,0,0,0,0,0,"Yes, our responses may be shared with other member instuitutions",Yes,,,,165015,Brandeis University,1,13,3,1073525868,33,3493,60,60,60,60,60,60,60,60,60,60,60,5440,72,

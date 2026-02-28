@@ -6,7 +6,7 @@ output:
     theme: flatly
 ---
 
-### *Data from 2021-22* {#college}
+### *Data from 2025-2026* {#college}
 
 ::: {.row}
 
@@ -36,10 +36,8 @@ output:
 
 # **Survey Administration**
 
-- Timeline: Data from 2021-22
-- Response Rate: 36 schools reported
-- Visualizations: very similar to 2020-21 report
-  - Main change is that performance measures were more open ended (rather than ranked), so results were reported in general table
+- Timeline: Data from 2025-2026
+- Response Rate: 39 schools reported
 - Data Analysis
   - Completed by St. Olaf College
   
@@ -49,4 +47,4 @@ output:
 
 <hr/>
 
-*Administered by the Benchmarking Committee; published May 2023*
+*Administered by the Benchmarking Committee; published May 2026*
