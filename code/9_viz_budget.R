@@ -1,4 +1,58 @@
+# =============================================================================
+# 9_viz_budget.R — Budget and funding data preparation
+# Creates: funding_data, endow_exp_data, gift_data, OP_budget, NOP_budget,
+#          total_budget
+# Consumed by: GeneralReport.Rmd (Budget section),
+#              custom_template.Rmd, validate_stolaf_report.R
+# =============================================================================
 library(tidyverse)
+
+if (!exists("ensure_cycle_config", mode = "function")) {
+  source(file.path("code", "00_cycle_config.R"))
+}
+
+cycle_config <- ensure_cycle_config()
+
+budget_overrides <- if (file.exists(cycle_config$budget_overrides_path)) {
+  readr::read_csv(cycle_config$budget_overrides_path, show_col_types = FALSE)
+} else {
+  tibble::tibble()
+}
+
+apply_budget_override <- function(data, target_field, override_type) {
+  if (nrow(budget_overrides) == 0L) {
+    return(data)
+  }
+
+  overrides <- budget_overrides |>
+    dplyr::filter(target_field == !!target_field, override_type == !!override_type) |>
+    dplyr::select(institution_name, dim1, override_value)
+
+  if (nrow(overrides) == 0L) {
+    return(data)
+  }
+
+  out <- data |>
+    dplyr::left_join(
+      overrides,
+      by = c("Institution Name" = "institution_name", "dim1")
+    )
+
+  applied <- out |>
+    dplyr::filter(!is.na(override_value)) |>
+    nrow()
+
+  message(
+    sprintf(
+      "Applied budget overrides (%s/%s): %d row(s).",
+      target_field,
+      override_type,
+      applied
+    )
+  )
+
+  out
+}
 
 
 
@@ -178,24 +232,28 @@ NOP_budget <- question_list$Q26 |>
     
     dplyr::rename(intern = "Amount available for funded internships ($)",
                   other = "Other ($)") |>
+    apply_budget_override(target_field = "other", override_type = "multiply") |>
     
     dplyr::mutate(
       other = dplyr::case_when(
-        (`Institution Name` == "Middlebury College" & dim1 == "Expendable gifts") ~ other/10,
+        !is.na(override_value) ~ other * as.numeric(override_value),
         TRUE ~ other
       )
     ) |>
+    dplyr::select(-override_value) |>
     
     dplyr::mutate(sum = intern + other,
                   diff = Total-sum) |> 
+    apply_budget_override(target_field = "total_correct", override_type = "replace") |>
     
     dplyr::mutate(
       total_correct = dplyr::case_when(
+        !is.na(override_value) ~ as.numeric(override_value),
         is.na(sum) ~ Total,
-        `Institution Name` == "Amherst College" & dim1 == "Other" ~ 172323,
         TRUE ~ sum
       )
     ) |>
+    dplyr::select(-override_value) |>
     
     dplyr::group_by(`Institution Name`) |>
     
@@ -220,6 +278,4 @@ total_budget <- OP_budget |>
     
     dplyr::filter(amount > 0)
   
-
-
 

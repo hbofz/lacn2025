@@ -6,7 +6,17 @@ output:
     theme: flatly
 ---
 
-### *Data from 2021-22* {#college}
+```{r setup, include=FALSE}
+library(tidyverse)
+
+source(file.path("code", "00_cycle_config.R"))
+cycle_config <- load_cycle_config()
+load(cycle_config$rdata_path, envir = .GlobalEnv)
+
+completed_responses <- length(clean_institution_names(question_list$Q1$`Institution Name`))
+```
+
+### *Data from `r cycle_config$cycle_label`* {#college}
 
 ::: {.row}
 
@@ -36,10 +46,9 @@ output:
 
 # **Survey Administration**
 
-- Timeline: Data from 2021-22
-- Response Rate: 36 schools reported
-- Visualizations: very similar to 2020-21 report
-  - Main change is that performance measures were more open ended (rather than ranked), so results were reported in general table
+- Timeline: Data from `r cycle_config$cycle_label`
+- Response submissions: `r completed_responses` completed responses
+- Visualizations: aligned with prior-cycle report structure, updated for `r cycle_config$cycle_label` question schema
 - Data Analysis
   - Completed by St. Olaf College
   
@@ -49,4 +58,4 @@ output:
 
 <hr/>
 
-*Administered by the Benchmarking Committee; published May 2023*
+*Administered by the Benchmarking Committee; published `r cycle_config$publication_label`*

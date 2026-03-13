@@ -1,0 +1,27 @@
+metric,expected,section,found_in_html,check_type,status
+N,38,Enrollment Summary,TRUE,html_value_presence,PASS
+Mean,"2,226",Enrollment Summary,TRUE,html_value_presence,PASS
+Median,"2,127",Enrollment Summary,TRUE,html_value_presence,PASS
+Max,"3,675",Enrollment Summary,TRUE,html_value_presence,PASS
+Min,"1,112",Enrollment Summary,TRUE,html_value_presence,PASS
+St Olaf College,"3,074",Enrollment Summary,TRUE,html_value_presence,PASS
+N,33,Appointments with Students Summary,TRUE,html_value_presence,PASS
+Mean,"2,063",Appointments with Students Summary,TRUE,html_value_presence,PASS
+Median,"1,882",Appointments with Students Summary,TRUE,html_value_presence,PASS
+Max,"4,270",Appointments with Students Summary,TRUE,html_value_presence,PASS
+Min,321,Appointments with Students Summary,TRUE,html_value_presence,PASS
+St Olaf College,"4,241",Appointments with Students Summary,TRUE,html_value_presence,PASS
+N,33,Alumni Engagement Summary,TRUE,html_value_presence,PASS
+Mean,370,Alumni Engagement Summary,TRUE,html_value_presence,PASS
+Median,220,Alumni Engagement Summary,TRUE,html_value_presence,PASS
+Max,"1,460",Alumni Engagement Summary,TRUE,html_value_presence,PASS
+Min,10,Alumni Engagement Summary,TRUE,html_value_presence,PASS
+St Olaf College,"1,018",Alumni Engagement Summary,TRUE,html_value_presence,PASS
+N,35,Total Funding Summary,TRUE,html_value_presence,PASS
+Mean,"933,609",Total Funding Summary,TRUE,html_value_presence,PASS
+Median,"744,350",Total Funding Summary,TRUE,html_value_presence,PASS
+Max,"4,045,592",Total Funding Summary,TRUE,html_value_presence,PASS
+Min,"42,000",Total Funding Summary,TRUE,html_value_presence,PASS
+St Olaf College,"1,406,105",Total Funding Summary,TRUE,html_value_presence,PASS
+Selected options count,1,St Olaf Reporting Selection,TRUE,raw_data_consistency,PASS
+Frequency sum,1,Reporting Distribution Total,TRUE,raw_data_consistency,PASS

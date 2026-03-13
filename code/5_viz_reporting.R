@@ -1,25 +1,61 @@
+# =============================================================================
+# 5_viz_reporting.R — Reporting structure and staffing data preparation
+# Creates: reporting_key, reporting_data, steps_data, student_staff_data,
+#          student_para_data, student_stustaff_ratio, prof_staff_data,
+#          student_prof_ratio, advising_q, prof_advising_data_total,
+#          prof_advising_data_FT, prof_employer_data, relations_activities
+# Consumed by: GeneralReport.Rmd (Reporting & Staffing sections),
+#              custom_template.Rmd, validate_stolaf_report.R
+# =============================================================================
 library(tidyverse)
 library(RColorBrewer)
 library(showtext)
 library(sysfonts)
 
 # load fonts
-font_add_google("Source Sans Pro")
+tryCatch(
+  font_add_google("Source Sans Pro"),
+  error = function(e) {
+    message("Source Sans Pro not available from Google; using default graphics font.")
+  }
+)
 
 showtext_auto()
 
 
 #### Reporting Structure ####
 
-reporting_data <- all_list$single$Q2 |>
-  mutate(Q2 = stringr::str_remove(Q2,":"))
+reporting_key <- keyFunction("Q2", Question, dim2) |>
+  dplyr::filter(stringr::str_detect(Question, "^Q2_[1-6]$")) |>
+  dplyr::distinct(Question, dim2)
+
+reporting_data <- question_list$Q2 |>
+  tidyr::pivot_longer(
+    cols = tidyselect::matches("^Q2_[1-6]$"),
+    names_to = "Question",
+    values_to = "selection"
+  ) |>
+  dplyr::filter(!is.na(selection) & selection != "") |>
+  dplyr::count(Question, name = "n") |>
+  dplyr::left_join(reporting_key, by = "Question") |>
+  dplyr::mutate(
+    reporting_option = dplyr::coalesce(dim2, Question),
+    reporting_option = stringr::str_remove(reporting_option, ":$"),
+    freq = n / dplyr::n_distinct(question_list$Q2$`Institution Name`)
+  ) |>
+  dplyr::arrange(dplyr::desc(n))
 
 
 
 #### Steps Removed ####
 
-steps_data <- all_list$single$Q3 |>
-  mutate(Q3 = stringr::str_remove(Q3, "[:blank:]\\(.+\\)"))
+steps_data <- question_list$Q3 |>
+  dplyr::filter(!is.na(Q3) & Q3 != "") |>
+  dplyr::mutate(
+    Q3 = stringr::str_remove(Q3, "[:blank:]\\(.+\\)")
+  ) |>
+  dplyr::count(Q3, name = "n") |>
+  dplyr::mutate(freq = n / sum(n))
 
 
 #### Advisory Boards ####
@@ -181,9 +217,6 @@ relations_activities <- question_list$Q19 |>
                 !is.infinite(`On Campus`))
   
   
-
-
-
 
 
 

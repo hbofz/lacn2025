@@ -15,9 +15,14 @@ keyFunction <- function(question, ...) {
 
 ####-----------Viz Functions------------------####
 
-matrixPlot <- function(data, breaks = NULL, college, title=NULL, font = "Source Sans Pro", size = 45) {
+matrixPlot <- function(data, breaks = NULL, college, title=NULL, font = "Source Sans Pro", size = 16) {
   
-  sysfonts::font_add_google(font)
+  tryCatch(
+    sysfonts::font_add_google(font),
+    error = function(e) {
+      message(sprintf("Font '%s' unavailable from Google; using default graphics font.", font))
+    }
+  )
   
   showtext::showtext_auto()
   
@@ -57,7 +62,8 @@ matrixPlot <- function(data, breaks = NULL, college, title=NULL, font = "Source 
       axis.text.x = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
       panel.background = ggplot2::element_blank(),
-      text = element_text(size = size, family = font)
+      text = element_text(size = size, family = font),
+      plot.margin = ggplot2::margin(10, 15, 10, 10)
     )
   
   
@@ -74,7 +80,7 @@ matrixPlot <- function(data, breaks = NULL, college, title=NULL, font = "Source 
                                  mapping = ggplot2::aes(label = `Institution Name`),
                                  nudge_y = max(data['n'])/2,
                                  nudge_x = -5,
-                                 size = 13,
+                                 size = 5,
                                  colour = "black",
                                  family = "Source Sans Pro")
     )
@@ -89,7 +95,7 @@ matrixPlot <- function(data, breaks = NULL, college, title=NULL, font = "Source 
   
 }
 
-singlePlot <- function(data, q, college=NULL, title = NULL, string_rem, font = "Lato", size = 45, lineheight = 0.5, angle) {
+singlePlot <- function(data, q, college=NULL, title = NULL, string_rem, font = "Lato", size = 16, lineheight = 0.5, angle) {
   
   viz <- ggplot2::ggplot(data = data, 
                          mapping = ggplot2::aes(reorder(.data[[q]], freq), freq))+
@@ -102,7 +108,7 @@ singlePlot <- function(data, q, college=NULL, title = NULL, string_rem, font = "
     ggplot2::scale_y_continuous(limits=c(0,1), 
                                 breaks = seq(0,1,by=0.2),
                                 labels = c('0%','20%','40%','60%','80%','100%'))+
-    scale_x_discrete(labels = function(x) stringr::str_wrap(x, width = 20))+
+    scale_x_discrete(labels = function(x) stringr::str_wrap(x, width = 24))+
     ggplot2::coord_flip()+
     ggplot2::labs(
       title = title,
@@ -112,7 +118,8 @@ singlePlot <- function(data, q, college=NULL, title = NULL, string_rem, font = "
     ggplot2::theme(
       axis.ticks = ggplot2::element_blank(),
       panel.background = ggplot2::element_blank(),
-      text = element_text(size = size, family = font, lineheight = lineheight)
+      text = element_text(size = size, family = font, lineheight = lineheight),
+      plot.margin = ggplot2::margin(10, 15, 10, 10)
     )
   
   if(!missing(college)) {
@@ -312,7 +319,6 @@ serviceCustom <- function(q,dim, college = "") {
   
   return(tbl)
 }
-
 
 
 

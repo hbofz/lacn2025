@@ -1,0 +1,252 @@
+check,passed,detail
+required_column:Institution Name,TRUE,present
+required_column:Undergraduate enrollment,TRUE,present
+required_column:Value of endowment assets at the beginning of the fiscal year,TRUE,present
+question_columns:Q1,TRUE,Q1_1 | Q1_3 | Q1_2
+question_columns:Q2,TRUE,Q2_1 | Q2_2 | Q2_3 | Q2_4 | Q2_5 | Q2_6 | Q2_6_TEXT
+question_columns:Q3,TRUE,Q3
+question_columns:Q4,TRUE,Q4_1 | Q4_2 | Q4_3
+question_columns:Q5,TRUE,Q5_1_1 | Q5_1_2 | Q5_2_1 | Q5_2_2 | Q5_3_1 | Q5_3_2
+question_columns:Q6,TRUE,Q6_1_9 | Q6_1_2 | Q6_1_3 | Q6_1_4 | Q6_1_5 | Q6_1_10
+question_columns:Q7,TRUE,Q7_1_1 | Q7_1_2 | Q7_1_3 | Q7_2_1 | Q7_2_2 | Q7_2_3 | Q7_3_1 | Q7_3_2 | Q7_3_3 | Q7_4_1 | Q7_4_2 | Q7_4_3 | Q7_5_1 | Q7_5_2 | Q7_5_3 | Q7_6_1 | Q7_6_2 | Q7_6_3 | Q7_7_1 | Q7_7_2 | Q7_7_3 | Q7_8_1 | Q7_8_2 | Q7_8_3 | Q7_9_1 | Q7_9_2 | Q7_9_3 | Q7_10_1 | Q7_10_2 | Q7_10_3 | Q7_11_1 | Q7_11_2 | Q7_11_3 | Q7_12_1 | Q7_12_2 | Q7_12_3 | Q7_13_1 | Q7_13_2 | Q7_13_3 | Q7_14_1 | Q7_14_2 | Q7_14_3
+question_columns:Q8,TRUE,Q8_1 | Q8_2 | Q8_3 | Q8_4 | Q8_5 | Q8_6 | Q8_7 | Q8_8 | Q8_9 | Q8_10 | Q8_11 | Q8_11_TEXT
+question_columns:Q9,TRUE,Q9_1 | Q9_3 | Q9_4 | Q9_5 | Q9_6 | Q9_7 | Q9_8 | Q9_10 | Q9_11 | Q9_12 | Q9_13 | Q9_13_TEXT
+question_columns:Q10,TRUE,Q10_27 | Q10_1 | Q10_2 | Q10_4 | Q10_5 | Q10_6 | Q10_16 | Q10_11 | Q10_12 | Q10_7 | Q10_3 | Q10_32 | Q10_33 | Q10_34 | Q10_31 | Q10_13 | Q10_14 | Q10_8 | Q10_28 | Q10_9 | Q10_10 | Q10_15 | Q10_35 | Q10_29 | Q10_29_TEXT
+question_columns:Q11,TRUE,Q11
+question_columns:Q12,TRUE,Q12
+question_columns:Q13,TRUE,Q13_1 | Q13_2 | Q13_3
+question_columns:Q14,TRUE,Q14
+question_columns:Q15,TRUE,Q15_1 | Q15_2 | Q15_3 | Q15_4 | Q15_4_TEXT
+question_columns:Q16,TRUE,Q16
+question_columns:Q17,TRUE,Q17
+question_columns:Q18,TRUE,Q18 | Q18_2_TEXT
+question_columns:Q19,TRUE,Q19_1_1 | Q19_1_2 | Q19_2_1 | Q19_2_2 | Q19_3_1 | Q19_3_2 | Q19_4_1 | Q19_4_2 | Q19_5_1 | Q19_5_2 | Q19_6_1 | Q19_6_2
+question_columns:Q20,TRUE,Q20_1_1 | Q20_1_2 | Q20_2_1 | Q20_2_2 | Q20_3_1 | Q20_3_2 | Q20_4_1 | Q20_4_2
+question_columns:Q21,TRUE,Q21_1 | Q21_2 | Q21_3 | Q21_4
+question_columns:Q22,TRUE,Q22_1_1 | Q22_1_2 | Q22_2_1 | Q22_2_2 | Q22_3_1 | Q22_3_2 | Q22_4_1 | Q22_4_2 | Q22_5_1 | Q22_5_2 | Q22_6_1 | Q22_6_2
+question_columns:Q23,TRUE,Q23_1_5 | Q23_1_2 | Q23_1_3 | Q23_1_4 | Q23_2_5 | Q23_2_2 | Q23_2_3 | Q23_2_4 | Q23_3_5 | Q23_3_2 | Q23_3_3 | Q23_3_4 | Q23_4_5 | Q23_4_2 | Q23_4_3 | Q23_4_4 | Q23_5_5 | Q23_5_2 | Q23_5_3 | Q23_5_4
+question_columns:Q24,TRUE,Q24_1_1 | Q24_2_1 | Q24_3_1 | Q24_4_1 | Q24_5_1 | Q24_6_1
+question_columns:Q25,TRUE,Q25_1 | Q25_4 | Q25_2
+question_columns:Q26,TRUE,Q26_1_1 | Q26_1_2 | Q26_1_5 | Q26_2_1 | Q26_2_2 | Q26_2_5 | Q26_3_1 | Q26_3_2 | Q26_3_5
+question_columns:Q27,TRUE,Q27
+question_columns:Q28,TRUE,Q28
+response_key_question:Q1_1,TRUE,present
+response_key_question:Q1_2,TRUE,present
+response_key_question:Q1_3,TRUE,present
+response_key_question:Q2_1,TRUE,present
+response_key_question:Q2_2,TRUE,present
+response_key_question:Q2_3,TRUE,present
+response_key_question:Q2_4,TRUE,present
+response_key_question:Q2_5,TRUE,present
+response_key_question:Q2_6,TRUE,present
+response_key_question:Q2_6_TEXT,TRUE,present
+response_key_question:Q3,TRUE,present
+response_key_question:Q4_1,TRUE,present
+response_key_question:Q4_2,TRUE,present
+response_key_question:Q4_3,TRUE,present
+response_key_question:Q5_1_1,TRUE,present
+response_key_question:Q5_1_2,TRUE,present
+response_key_question:Q5_2_1,TRUE,present
+response_key_question:Q5_2_2,TRUE,present
+response_key_question:Q5_3_1,TRUE,present
+response_key_question:Q5_3_2,TRUE,present
+response_key_question:Q6_1_10,TRUE,present
+response_key_question:Q6_1_2,TRUE,present
+response_key_question:Q6_1_3,TRUE,present
+response_key_question:Q6_1_4,TRUE,present
+response_key_question:Q6_1_5,TRUE,present
+response_key_question:Q6_1_9,TRUE,present
+response_key_question:Q7_1_1,TRUE,present
+response_key_question:Q7_1_2,TRUE,present
+response_key_question:Q7_1_3,TRUE,present
+response_key_question:Q7_2_1,TRUE,present
+response_key_question:Q7_2_2,TRUE,present
+response_key_question:Q7_2_3,TRUE,present
+response_key_question:Q7_3_1,TRUE,present
+response_key_question:Q7_3_2,TRUE,present
+response_key_question:Q7_3_3,TRUE,present
+response_key_question:Q7_4_1,TRUE,present
+response_key_question:Q7_4_2,TRUE,present
+response_key_question:Q7_4_3,TRUE,present
+response_key_question:Q7_5_1,TRUE,present
+response_key_question:Q7_5_2,TRUE,present
+response_key_question:Q7_5_3,TRUE,present
+response_key_question:Q7_6_1,TRUE,present
+response_key_question:Q7_6_2,TRUE,present
+response_key_question:Q7_6_3,TRUE,present
+response_key_question:Q7_7_1,TRUE,present
+response_key_question:Q7_7_2,TRUE,present
+response_key_question:Q7_7_3,TRUE,present
+response_key_question:Q7_8_1,TRUE,present
+response_key_question:Q7_8_2,TRUE,present
+response_key_question:Q7_8_3,TRUE,present
+response_key_question:Q7_9_1,TRUE,present
+response_key_question:Q7_9_2,TRUE,present
+response_key_question:Q7_9_3,TRUE,present
+response_key_question:Q7_10_1,TRUE,present
+response_key_question:Q7_10_2,TRUE,present
+response_key_question:Q7_10_3,TRUE,present
+response_key_question:Q7_11_1,TRUE,present
+response_key_question:Q7_11_2,TRUE,present
+response_key_question:Q7_11_3,TRUE,present
+response_key_question:Q7_12_1,TRUE,present
+response_key_question:Q7_12_2,TRUE,present
+response_key_question:Q7_12_3,TRUE,present
+response_key_question:Q7_13_1,TRUE,present
+response_key_question:Q7_13_2,TRUE,present
+response_key_question:Q7_13_3,TRUE,present
+response_key_question:Q7_14_1,TRUE,present
+response_key_question:Q7_14_2,TRUE,present
+response_key_question:Q7_14_3,TRUE,present
+response_key_question:Q8_1,TRUE,present
+response_key_question:Q8_2,TRUE,present
+response_key_question:Q8_3,TRUE,present
+response_key_question:Q8_4,TRUE,present
+response_key_question:Q8_5,TRUE,present
+response_key_question:Q8_6,TRUE,present
+response_key_question:Q8_7,TRUE,present
+response_key_question:Q8_8,TRUE,present
+response_key_question:Q8_9,TRUE,present
+response_key_question:Q8_10,TRUE,present
+response_key_question:Q8_11,TRUE,present
+response_key_question:Q8_11_TEXT,TRUE,present
+response_key_question:Q9_1,TRUE,present
+response_key_question:Q9_3,TRUE,present
+response_key_question:Q9_4,TRUE,present
+response_key_question:Q9_5,TRUE,present
+response_key_question:Q9_6,TRUE,present
+response_key_question:Q9_7,TRUE,present
+response_key_question:Q9_8,TRUE,present
+response_key_question:Q9_10,TRUE,present
+response_key_question:Q9_11,TRUE,present
+response_key_question:Q9_12,TRUE,present
+response_key_question:Q9_13,TRUE,present
+response_key_question:Q9_13_TEXT,TRUE,present
+response_key_question:Q10_1,TRUE,present
+response_key_question:Q10_2,TRUE,present
+response_key_question:Q10_3,TRUE,present
+response_key_question:Q10_4,TRUE,present
+response_key_question:Q10_5,TRUE,present
+response_key_question:Q10_6,TRUE,present
+response_key_question:Q10_7,TRUE,present
+response_key_question:Q10_8,TRUE,present
+response_key_question:Q10_9,TRUE,present
+response_key_question:Q10_10,TRUE,present
+response_key_question:Q10_11,TRUE,present
+response_key_question:Q10_12,TRUE,present
+response_key_question:Q10_13,TRUE,present
+response_key_question:Q10_14,TRUE,present
+response_key_question:Q10_15,TRUE,present
+response_key_question:Q10_16,TRUE,present
+response_key_question:Q10_27,TRUE,present
+response_key_question:Q10_28,TRUE,present
+response_key_question:Q10_29,TRUE,present
+response_key_question:Q10_29_TEXT,TRUE,present
+response_key_question:Q10_31,TRUE,present
+response_key_question:Q10_32,TRUE,present
+response_key_question:Q10_33,TRUE,present
+response_key_question:Q10_34,TRUE,present
+response_key_question:Q10_35,TRUE,present
+response_key_question:Q11,TRUE,present
+response_key_question:Q12,TRUE,present
+response_key_question:Q13_1,TRUE,present
+response_key_question:Q13_2,TRUE,present
+response_key_question:Q13_3,TRUE,present
+response_key_question:Q14,TRUE,present
+response_key_question:Q15_1,TRUE,present
+response_key_question:Q15_2,TRUE,present
+response_key_question:Q15_3,TRUE,present
+response_key_question:Q15_4,TRUE,present
+response_key_question:Q15_4_TEXT,TRUE,present
+response_key_question:Q16,TRUE,present
+response_key_question:Q17,TRUE,present
+response_key_question:Q18_2_TEXT,TRUE,present
+response_key_question:Q18,TRUE,present
+response_key_question:Q19_1_1,TRUE,present
+response_key_question:Q19_1_2,TRUE,present
+response_key_question:Q19_2_1,TRUE,present
+response_key_question:Q19_2_2,TRUE,present
+response_key_question:Q19_3_1,TRUE,present
+response_key_question:Q19_3_2,TRUE,present
+response_key_question:Q19_4_1,TRUE,present
+response_key_question:Q19_4_2,TRUE,present
+response_key_question:Q19_5_1,TRUE,present
+response_key_question:Q19_5_2,TRUE,present
+response_key_question:Q19_6_1,TRUE,present
+response_key_question:Q19_6_2,TRUE,present
+response_key_question:Q20_1_1,TRUE,present
+response_key_question:Q20_1_2,TRUE,present
+response_key_question:Q20_2_1,TRUE,present
+response_key_question:Q20_2_2,TRUE,present
+response_key_question:Q20_3_1,TRUE,present
+response_key_question:Q20_3_2,TRUE,present
+response_key_question:Q20_4_1,TRUE,present
+response_key_question:Q20_4_2,TRUE,present
+response_key_question:Q21_1,TRUE,present
+response_key_question:Q21_2,TRUE,present
+response_key_question:Q21_3,TRUE,present
+response_key_question:Q21_4,TRUE,present
+response_key_question:Q22_1_1,TRUE,present
+response_key_question:Q22_1_2,TRUE,present
+response_key_question:Q22_2_1,TRUE,present
+response_key_question:Q22_2_2,TRUE,present
+response_key_question:Q22_3_1,TRUE,present
+response_key_question:Q22_3_2,TRUE,present
+response_key_question:Q22_4_1,TRUE,present
+response_key_question:Q22_4_2,TRUE,present
+response_key_question:Q22_5_1,TRUE,present
+response_key_question:Q22_5_2,TRUE,present
+response_key_question:Q22_6_1,TRUE,present
+response_key_question:Q22_6_2,TRUE,present
+response_key_question:Q23_1_2,TRUE,present
+response_key_question:Q23_1_3,TRUE,present
+response_key_question:Q23_1_4,TRUE,present
+response_key_question:Q23_1_5,TRUE,present
+response_key_question:Q23_2_2,TRUE,present
+response_key_question:Q23_2_3,TRUE,present
+response_key_question:Q23_2_4,TRUE,present
+response_key_question:Q23_2_5,TRUE,present
+response_key_question:Q23_3_2,TRUE,present
+response_key_question:Q23_3_3,TRUE,present
+response_key_question:Q23_3_4,TRUE,present
+response_key_question:Q23_3_5,TRUE,present
+response_key_question:Q23_4_2,TRUE,present
+response_key_question:Q23_4_3,TRUE,present
+response_key_question:Q23_4_4,TRUE,present
+response_key_question:Q23_4_5,TRUE,present
+response_key_question:Q23_5_2,TRUE,present
+response_key_question:Q23_5_3,TRUE,present
+response_key_question:Q23_5_4,TRUE,present
+response_key_question:Q23_5_5,TRUE,present
+response_key_question:Q24_1_1,TRUE,present
+response_key_question:Q24_2_1,TRUE,present
+response_key_question:Q24_3_1,TRUE,present
+response_key_question:Q24_4_1,TRUE,present
+response_key_question:Q24_5_1,TRUE,present
+response_key_question:Q24_6_1,TRUE,present
+response_key_question:Q25_1,TRUE,present
+response_key_question:Q25_2,TRUE,present
+response_key_question:Q25_4,TRUE,present
+response_key_question:Q26_1_1,TRUE,present
+response_key_question:Q26_1_2,TRUE,present
+response_key_question:Q26_1_5,TRUE,present
+response_key_question:Q26_2_1,TRUE,present
+response_key_question:Q26_2_2,TRUE,present
+response_key_question:Q26_2_5,TRUE,present
+response_key_question:Q26_3_1,TRUE,present
+response_key_question:Q26_3_2,TRUE,present
+response_key_question:Q26_3_5,TRUE,present
+response_key_question:Q27,TRUE,present
+response_key_question:Q28,TRUE,present
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...239
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...240
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...241
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...242
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...243
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...244
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...245
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...246
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...247
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...248
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...249
+duplicate_column:Percent of undergraduate enrollment that are women (DRVEF2023).,TRUE,kept=Percent of undergraduate enrollment that are women (DRVEF2023)...238; dropped=Percent of undergraduate enrollment that are women (DRVEF2023)...250

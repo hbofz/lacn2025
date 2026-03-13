@@ -23,16 +23,29 @@ library(showtext)
 library(sysfonts)
 
 # load fonts
-font_add_google(params$plotfont)
+tryCatch(
+  font_add_google(params$plotfont),
+  error = function(e) {
+    message(sprintf("Font %s unavailable from Google; using default graphics font.", params$plotfont))
+  }
+)
 
 showtext_auto()
 
-# load LACN analysis environment
-load("~/lacn2025/lacn.RData")
-# load("../lacn.RData")
+# load cycle config and LACN analysis environment
+# find_lacn_root() is defined in 00_cycle_config.R — source it rather than
+# duplicating the function here.
+source(file.path(normalizePath(file.path(getwd(), ".."), mustWork = FALSE), "code", "00_cycle_config.R"))
+project_root <- lacn_root()
+cycle_config <- load_cycle_config(config_path = file.path(project_root, "config", "cycles.csv"))
+load(cycle_config$rdata_path, envir = .GlobalEnv)
+report_contract <- ensure_report_contract(
+  response_key = if (exists("response_key", inherits = FALSE)) response_key else NULL,
+  cycle_config = cycle_config
+)
 ```
 
-#### Data from 2023-2024 {#subtitle}
+#### Data from `r cycle_config$cycle_label` {#subtitle}
 
 <hr/>
 
@@ -76,7 +89,7 @@ enroll_data |>
     nudge_y=500,
     nudge_x = -7,
     color = "black",
-    size = 15,
+    size = 5,
     family = params$plotfont
   )+
   
@@ -90,7 +103,7 @@ enroll_data |>
       axis.ticks = element_blank(),
       panel.background = element_blank(),
       plot.margin = unit(c(1,1,1,1), "cm"),
-      text = element_text(size = 45, family = params$plotfont)
+      text = element_text(size = 16, family = params$plotfont)
     )
 ```
 
@@ -116,18 +129,76 @@ tableViz(enroll_data, var = "enroll", college = params$college)
 
   <div class="col-sm-9">
 
-```{r reporting-plot}
+```{r reporting-plot, fig.width=11, fig.height=6}
 
-singlePlot(reporting_data, q = "Q2",
-           string_rem = ":",
-           size = 45,
-           font = params$plotfont,
-           college = params$college,
-           angle = 0)+ 
-    geom_text(aes(label = paste0(round((n/sum(reporting_data$n)*100), 1), "%")),             
-            hjust = -0.5,
-            size = 9.5, 
-            font = params$plotfont)
+college_q2 <- question_list$Q2 |>
+  dplyr::filter(`Institution Name` == params$college) |>
+  tidyr::pivot_longer(
+    cols = tidyselect::matches("^Q2_[1-6]$"),
+    names_to = "Question",
+    values_to = "selection"
+  ) |>
+  dplyr::filter(!is.na(selection) & selection != "") |>
+  dplyr::select(Question) |>
+  dplyr::distinct()
+
+plot_reporting <- reporting_data |>
+  dplyr::left_join(college_q2 |> dplyr::mutate(your_school = TRUE), by = "Question") |>
+  dplyr::mutate(
+    your_school = tidyr::replace_na(your_school, FALSE),
+    fill_color = dplyr::if_else(your_school, "#217DBB", "#7CBCE8")
+  )
+
+plot_reporting |>
+  ggplot(aes(reorder(reporting_option, freq), freq, fill = fill_color)) +
+  geom_hline(yintercept = seq(0, 1, by = 0.2), colour = "grey") +
+  geom_col(width = 0.6) +
+  scale_fill_identity() +
+  scale_x_discrete(labels = function(x) stringr::str_wrap(x, width = 24)) +
+  scale_y_continuous(
+    limits = c(0, 1),
+    breaks = seq(0, 1, by = 0.2),
+    labels = scales::percent_format(accuracy = 1)
+  ) +
+  coord_flip() +
+  labs(
+    title = NULL,
+    x = NULL,
+    y = "Frequency"
+  ) +
+  theme(
+    axis.ticks = element_blank(),
+    panel.background = element_blank(),
+    axis.text.y = element_text(size = 16, family = params$plotfont),
+    axis.text.x = element_text(size = 13, family = params$plotfont),
+    axis.title.y = element_text(size = 18, family = params$plotfont),
+    text = element_text(size = 18, family = params$plotfont),
+    plot.margin = margin(10, 40, 10, 10)
+  ) +
+  geom_text(
+    aes(label = scales::percent(freq, accuracy = 0.1)),
+    hjust = -0.2,
+    size = 4.5,
+    family = params$plotfont
+  ) +
+  geom_point(
+    data = dplyr::filter(plot_reporting, your_school),
+    aes(y = freq),
+    shape = 21,
+    fill = "black",
+    colour = "white",
+    size = 4
+  ) +
+  ggrepel::geom_text_repel(
+    data = dplyr::filter(plot_reporting, your_school),
+    aes(label = "Your School"),
+    size = 4,
+    nudge_x = 0.35,
+    nudge_y = 0.04,
+    min.segment.length = 0,
+    segment.color = "black",
+    family = params$plotfont
+  )
 
 ```
 
@@ -148,17 +219,18 @@ singlePlot(reporting_data, q = "Q2",
 
   <div class="col-sm-9">
 
-```{r steps-plot}
+```{r steps-plot, fig.width=11, fig.height=6}
 
   singlePlot(steps_data, q = "Q3",
            string_rem = "[:blank:]\\(.+\\)",
-           size = 45,
+           size = 14,
+           lineheight = 0.9,
            font = params$plotfont,
            college = params$college,
-           angle = 270)+ 
+           angle = 0)+ 
     geom_text(aes(label = paste0(round((n/sum(steps_data$n)*100), 1), "%")),             
             hjust = -0.5,
-            size = 9.5, 
+            size = 5, 
             font = params$plotfont)
 
 ```
@@ -178,7 +250,8 @@ singlePlot(reporting_data, q = "Q2",
 
 ```{r performance-metrics}
 
-# MAYBE ADD A TOTAL RESPONSES
+# Dynamic respondent count for this cycle (not hardcoded)
+q4_respondent_count <- n_distinct(question_list$Q4$`Institution Name`)
 
 data <-
   question_list$Q4 |> 
@@ -209,7 +282,7 @@ data <-
          Measure = ifelse(Measure == "Fds" | Measure == "Fds Outcomes", "First Destination Outcomes", Measure)) |>
   count(Measure, sort = TRUE) |>
   filter(n >= 2) %>%
-  mutate(frequency = paste0(round(n/35 * 100, 1), "%"))
+  mutate(frequency = paste0(round(n/q4_respondent_count * 100, 1), "%"))
 
 ```
 
@@ -254,7 +327,7 @@ data |>
   gt::gt() |>
     
   gt::tab_header(title = "Which Performance Measures are Most Important?",
-                 subtitle = "Minimum 2 responses (n = 35)") |>
+                 subtitle = paste0("Minimum 2 responses (n = ", q4_respondent_count, ")")) |>
   
   
   gt::cols_label(Measure = "Performance Measure",
@@ -375,10 +448,10 @@ Most important performance measures to your institution: 1. `r college_response$
 
 <!--   theme( -->
 <!--     panel.background = element_blank(), -->
-<!--     text = element_text(family = params$plotfont, size = 40), -->
+<!--     text = element_text(family = params$plotfont, size = 14), -->
 <!--     axis.ticks.y = element_blank(), -->
 <!--     axis.title.y = element_blank(), -->
-<!--     axis.title.x = element_text(size = 25), -->
+<!--     axis.title.x = element_text(size = 9), -->
 <!--     legend.position = "none" -->
 <!--   ) -->
 
@@ -395,7 +468,7 @@ Most important performance measures to your institution: 1. `r college_response$
 
 matrixPlot(student_staff_data, breaks = c(0,25,50,75,100),
            font = params$plotfont,
-           size = 45,
+           size = 16,
            college = params$college)
 
 ```
@@ -425,7 +498,7 @@ tableViz(data = student_staff_data,'n', college = params$college)
 
 matrixPlot(student_para_data, breaks = c(0,25,50,75,100),
            font = params$plotfont,
-           size = 45,
+           size = 16,
            college = params$college)
 
 ```
@@ -452,15 +525,17 @@ tableViz(data = student_para_data,'n', college = params$college)
   <div class="col-sm-7">
 
 ```{r ss-ratio-plot}
+# Filter out the max outlier for readability and note it in the caption.
+ss_max_val <- max(student_stustaff_ratio$n)
 student_stustaff_ratio %>%
-  filter(n != max(student_stustaff_ratio$n)) |>
+  filter(n != ss_max_val) |>
 matrixPlot(breaks = c(0,250,500,750),
            font = params$plotfont,
-           size = 45,
+           size = 16,
            college = params$college)+ 
-  labs(caption = "* The max value (3069) is not represented in the bar chart.")+ 
+  labs(caption = paste0("* The max value (", round(ss_max_val), ") is not represented in the bar chart."))+ 
   theme(
-    plot.caption = element_text(size = 20) 
+    plot.caption = element_text(size = 11, lineheight = 1.2) 
   )
 
 ```
@@ -490,7 +565,7 @@ tableViz(student_stustaff_ratio, var='n', college = params$college)
 ```{r prof-plot}
 matrixPlot(prof_staff_data, breaks = c(0,10,20,30),
            font = params$plotfont,
-           size = 45,
+           size = 16,
            college = params$college)
 ```
 
@@ -516,7 +591,7 @@ tableViz(prof_staff_data, var = 'n', college = params$college)
 
 matrixPlot(student_prof_ratio, breaks = c(0,100,200,300,400,500),
            font = params$plotfont,
-           size = 45,
+           size = 16,
            college = params$college)
 
 ```
@@ -581,7 +656,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 
   </div>
@@ -595,7 +670,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -608,7 +683,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -621,7 +696,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -634,7 +709,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -648,7 +723,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -662,7 +737,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -676,7 +751,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -690,7 +765,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -704,7 +779,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -718,7 +793,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -732,7 +807,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -746,7 +821,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -760,7 +835,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1011,7 +1086,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 
   </div>
@@ -1025,7 +1100,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
   
   </div>
@@ -1040,7 +1115,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1053,7 +1128,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1066,7 +1141,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1080,7 +1155,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1094,7 +1169,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1108,7 +1183,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1122,7 +1197,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1136,7 +1211,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1150,7 +1225,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1164,7 +1239,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1178,7 +1253,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
 
@@ -1192,7 +1267,7 @@ prof_employer_data |>
   filter(n > 0 & !is.na(n) & !is.infinite(n)) |>
 matrixPlot( breaks = c(0,5,10,15), 
            font = params$plotfont,
-           size = 45, college = params$college)
+           size = 16, college = params$college)
 ```
 </div>
   
@@ -1577,20 +1652,25 @@ all_list$multi$Q10 |>
 
   <div class="col-sm-7">
 ```{r service-grad-tab}
+grad_services_available <- report_contract$grad_services_available
+grad_services_scope <- report_contract$grad_services_scope
+grad_services_note <- availability_summary_text(
+  question_list[[grad_services_available]],
+  grad_services_available,
+  "graduate-student services"
+)
 
-write_in_gserve <- question_list$Q12$Q12_4_TEXT
-
-q15_n <- question_list[['Q15']] |>
+q15_n <- question_list[[grad_services_scope]] |>
   
   dplyr::filter(dplyr::if_any(.cols = !(1:2), .fns = ~ !is.na(.x))) |>
   
   nrow()
 
-all_list$multi$Q15 |>
+all_list$multi[[grad_services_scope]] |>
   
   left_join(
     serviceCustom(
-      q = 'Q15',
+      q = grad_services_scope,
       dim = 'dim2',
       college = params$college
     )
@@ -1607,7 +1687,7 @@ all_list$multi$Q15 |>
   dplyr::arrange(-n) |> 
   
   serviceTab(
-    q = "Q15",
+    q = grad_services_scope,
     title = "Services Offered to Grad Students",
     subtitle = "",
     offer = "Services"
@@ -1618,20 +1698,21 @@ all_list$multi$Q15 |>
   <div class="col-sm-5">
   
 ```{r service-grad-plot}
-all_list$single$Q14 |>
+all_list$single[[grad_services_available]] |>
+  rename(response = all_of(grad_services_available)) |>
   
   mutate(
-    Q14 = replace_na(Q14, 'No Response')
+    response = replace_na(response, 'No Response')
   ) |>
   
-  ggplot(aes(factor(Q14, levels=c('No','Yes','No Response')), 
+  ggplot(aes(factor(response, levels=c('No','Yes','No Response')), 
              n, 
-             fill = Q14, 
+             fill = response, 
              label = n))+
   
   geom_hline(yintercept = seq(0,25,by=5), colour = "grey")+
   geom_bar(stat = "identity", width = 0.4)+
-  geom_text(size = 20, colour = "white", nudge_y = -2)+
+  geom_text(size = 7, colour = "white", nudge_y = -2)+
   
   scale_y_continuous(labels = seq(0,25,by=5))+
   scale_fill_manual(
@@ -1645,13 +1726,15 @@ all_list$single$Q14 |>
   )+
   
   theme(
-    text = element_text(family = params$plotfont, size = 45),
+    text = element_text(family = params$plotfont, size = 16),
     panel.background = element_blank(),
     axis.ticks = element_blank(),
-    axis.text = element_text(size = 35, colour = "black"),
+    axis.text = element_text(size = 12, colour = "black"),
     legend.position = "none"
   )
 ```
+
+`r grad_services_note`
   
 
   </div>
@@ -1663,20 +1746,27 @@ all_list$single$Q14 |>
 
   <div class="col-sm-7">
 ```{r service-alum}
+alumni_services_available <- report_contract$alumni_services_available
+alumni_services_scope <- report_contract$alumni_services_scope
+alumni_services_note <- availability_summary_text(
+  question_list[[alumni_services_available]],
+  alumni_services_available,
+  "alumni services"
+)
 
-q17_n <- question_list[['Q17']] |>
+q17_n <- question_list[[alumni_services_scope]] |>
   
   dplyr::filter(dplyr::if_any(.cols = !(1:2), .fns = ~ !is.na(.x))) |>
   
   nrow()
 
-q17_custom <- question_list$Q17 |>
+q17_custom <- question_list[[alumni_services_scope]] |>
   filter(`Institution Name` == params$college) |>
-  select(Q17) |>
-  rename(value = 'Q17') |>
+  select(all_of(alumni_services_scope)) |>
+  rename(value = all_of(alumni_services_scope)) |>
   add_column('Your School' = "Yes")
 
-all_list$multi$Q17 |>
+all_list$multi[[alumni_services_scope]] |>
   
   left_join(
     q17_custom
@@ -1691,7 +1781,7 @@ all_list$multi$Q17 |>
   
   dplyr::arrange(-n) |>
   
-  serviceTab(q = "Q17", title = "Services Offered to Alumni",
+  serviceTab(q = alumni_services_scope, title = "Services Offered to Alumni",
              subtitle = "No write-in responses",
              offer = "Services")
 
@@ -1700,7 +1790,7 @@ all_list$multi$Q17 |>
   
   <div class="col-sm-5">
   
-  All institutions offer alumni services (`r nTab(question_list$Q14$Q14)`)
+  `r alumni_services_note`
 
   </div>
   
@@ -1737,7 +1827,7 @@ info_no_data |>
     nudge_y=200,
     nudge_x = -3,
     color = "black",
-    size = 15,
+    size = 5,
     family = params$plotfont
   )+
   
@@ -1748,7 +1838,7 @@ info_no_data |>
   )+
   
   theme(
-    text = element_text(family = params$plotfont, size = 40),
+    text = element_text(family = params$plotfont, size = 14),
     panel.background = element_blank(),
     axis.text.x = element_blank(),
     axis.ticks = element_blank(),
@@ -1796,7 +1886,7 @@ info_employ_data |>
     ),
     nudge_y=75,
     color = "black",
-    size = 15,
+    size = 5,
     family = params$plotfont
   )+
   
@@ -1807,7 +1897,7 @@ info_employ_data |>
   )+
   
   theme(
-    text = element_text(family = params$plotfont, size = 40),
+    text = element_text(family = params$plotfont, size = 14),
     panel.background = element_blank(),
     axis.text.x = element_blank(),
     axis.ticks = element_blank(),
@@ -1885,7 +1975,7 @@ mutated_rel_activities|>
 
   ggplot2::theme(
     panel.grid.major = element_line(color = "gray80"),
-    text = ggplot2::element_text(size = 45, 
+    text = ggplot2::element_text(size = 16, 
                                  family = params$plotfont),
     panel.background = ggplot2::element_blank(),
     axis.text.x = ggplot2::element_blank(),
@@ -1946,8 +2036,8 @@ appt_student_data |>
                                          `Institution Name` == params$college & Year == "Senior"),
                            mapping = ggplot2::aes(label = `Institution Name`),
                            nudge_y = 1500,
-                           nudge_x = -20, #was -200 before
-                           size = 10, #13
+                           nudge_x = -20,
+                           size = 6,
                            colour = "black",
                            family = params$plotfont)+
   
@@ -1966,18 +2056,18 @@ appt_student_data |>
            x = 5,
            y = 3500,
            label = "a)",
-           size = 10, #15
+           size = 6,
            family = params$plotfont)+
   
 
   ggplot2::theme(
-    text = ggplot2::element_text(size = 35,#45 
+    text = ggplot2::element_text(size = 14,
                                  family = params$plotfont),
     axis.text.x = ggplot2::element_blank(),
     axis.ticks = ggplot2::element_blank(),
     panel.background = ggplot2::element_blank(),
     legend.title = ggplot2::element_blank(),
-    legend.text = ggplot2::element_text(size = 30, colour = "black"),
+    legend.text = ggplot2::element_text(size = 10, colour = "black"),
     legend.position = "right"
     )
 
@@ -2026,8 +2116,8 @@ appt_student_data |>
                     position = "dodge",
                     stat = "identity") +
   geom_text(aes(label = round(amount,0)),
-            colour = "white", size = 9,
-            hjust = 1.2,
+            colour = "white", size = 5,
+            hjust = 1.1,
             position = position_dodge(.9),
             angle = 90)+
   
@@ -2047,18 +2137,18 @@ appt_student_data |>
            x = 0.7,
            y = 1750,
            label = "b)",
-           size = 15,
+           size = 5,
            family = params$plotfont)+
   
 
   ggplot2::theme(
-    text = ggplot2::element_text(size = 45, 
+    text = ggplot2::element_text(size = 16, 
                                  family = params$plotfont),
-    axis.text.x = ggplot2::element_text(size = 30, colour = "black"),
+    axis.text.x = ggplot2::element_text(size = 12, colour = "black"),
     axis.ticks = ggplot2::element_blank(),
     panel.background = ggplot2::element_blank(),
     legend.title = ggplot2::element_blank(),
-    legend.text = ggplot2::element_text(size = 30, colour = "black"),
+    legend.text = ggplot2::element_text(size = 10, colour = "black"),
     legend.position = "right"
   )
 ```
@@ -2094,7 +2184,7 @@ appt_alum_data |>
     nudge_y=500,
     nudge_x = -7,
     color = "black",
-    size = 15,
+    size = 5,
     family = params$plotfont
   )+
   
@@ -2110,7 +2200,7 @@ appt_alum_data |>
     )
   )+
   ggplot2::theme(
-    text = ggplot2::element_text(size = 40, family = params$plotfont),
+    text = ggplot2::element_text(size = 14, family = params$plotfont),
     axis.text.x = ggplot2::element_blank(),
     axis.ticks = ggplot2::element_blank(),
     panel.background = ggplot2::element_blank(),
@@ -2165,7 +2255,7 @@ appt_fte_data |>
     nudge_y=200,
     nudge_x = -7,
     color = "black",
-    size = 15,
+    size = 5,
     family = params$plotfont
   )+
   
@@ -2176,9 +2266,9 @@ appt_fte_data |>
   )+
   
   ggplot2::theme(
-    text = ggplot2::element_text(size = 40, family = params$plotfont,
+    text = ggplot2::element_text(size = 14, family = params$plotfont,
                                  lineheight = .5),
-    plot.caption = element_text(size = 20),
+    plot.caption = element_text(size = 10, lineheight = 1.2, margin = ggplot2::margin(t = 10)),
     panel.background = ggplot2::element_blank(),
     axis.ticks = ggplot2::element_blank(),
     axis.text.x = ggplot2::element_blank()
@@ -2236,8 +2326,8 @@ sengage_year_data |>
                     position = "dodge",
                     stat = "identity")+
   geom_text(aes(fill = measure, label = round(engage,0)),
-    colour = "white", size = 9,
-    vjust = 1.5, position = position_dodge(.9)
+    colour = "white", size = 5,
+    vjust = 1.3, position = position_dodge(.9)
     )+
   
   ggplot2::scale_y_continuous(limits = c(0,100), breaks = c(0,25,50,75,100))+
@@ -2253,12 +2343,12 @@ sengage_year_data |>
   )+
   
   ggplot2::theme(
-    text = ggplot2::element_text(size = 45, family = params$plotfont),
+    text = ggplot2::element_text(size = 16, family = params$plotfont),
     axis.ticks = ggplot2::element_blank(),
-    axis.text.x = ggplot2::element_text(size = 30, lineheight = 0.5, colour = "black"),
+    axis.text.x = ggplot2::element_text(size = 12, lineheight = 1.1, colour = "black"),
     panel.background = ggplot2::element_blank(),
     legend.title = ggplot2::element_blank(),
-    legend.text = element_text(size = 30),
+    legend.text = element_text(size = 10),
     legend.position = "top"
     )
 ```
@@ -2281,7 +2371,7 @@ sengage_year_data |>
 
   <div class="col-sm-9">
 
-```{r sengage-type-plot}
+```{r sengage-type-plot, fig.height=8}
 sengage_type_data |>
   
     dplyr::mutate(dim2 = case_when(
@@ -2307,23 +2397,30 @@ sengage_type_data |>
   ) |>
   
   mutate(measure = factor(measure, levels = c('Mean','Median','Max',"Your School"))) |>
+  dplyr::mutate(dim2 = forcats::fct_reorder(dim2, engage, .fun = max, .desc = TRUE)) |>
   
   ggplot2::ggplot(ggplot2::aes(dim2,engage, fill = measure))+
   
   ggplot2::geom_hline(yintercept = c(0,25,50,75,100), colour = "grey")+
-  ggplot2::geom_bar(ggplot2::aes(fill = measure),
-                    position = "dodge",
-                    stat = "identity")+
-  geom_text(aes(label = round(engage,0)),
-            colour = "white", size = 8.5,
-            vjust = 1.4, position = position_dodge(.9)
-            )+
-  ggplot2::scale_y_continuous(limits = c(0,100), breaks = c(0,25,50,75,100))+
-  scale_x_discrete(labels = function(x) stringr::str_wrap(x, width = 15))+
+  ggplot2::geom_col(
+    ggplot2::aes(fill = measure),
+    position = ggplot2::position_dodge(width = 0.8),
+    width = 0.7
+  )+
+  ggplot2::geom_text(
+    ggplot2::aes(label = round(engage,0)),
+    colour = "black",
+    size = 3.8,
+    hjust = -0.2,
+    position = ggplot2::position_dodge(width = 0.8)
+  )+
+  ggplot2::scale_y_continuous(limits = c(0,105), breaks = c(0,25,50,75,100))+
+  ggplot2::scale_x_discrete(labels = function(x) stringr::str_wrap(x, width = 32))+
+  ggplot2::coord_flip(clip = "off")+
   ggplot2::labs(
     y = "Engagement (%)",
     x = NULL,
-    caption = "*Includes in-person, phone, video chat, \nand email consultations"
+    caption = "*Includes in-person, phone, video chat, and email consultations"
   )+
   ggplot2::scale_fill_manual(
     values=c(Mean = "#6AD4BF",
@@ -2333,15 +2430,17 @@ sengage_type_data |>
     )
   )+
   ggplot2::theme(
-    text = ggplot2::element_text(size = 45, family = params$plotfont,
+    text = ggplot2::element_text(size = 16, family = params$plotfont,
                                  lineheight = .5),
     axis.ticks = ggplot2::element_blank(),
-    axis.text.x = ggplot2::element_text(size = 30, colour = "black"),
+    axis.text.x = ggplot2::element_text(size = 12, lineheight = 1.1, colour = "black"),
+    axis.text.y = ggplot2::element_text(size = 12, lineheight = 1.1, colour = "black"),
     panel.background = ggplot2::element_blank(),
     legend.title = ggplot2::element_blank(),
-    legend.text = element_text(size = 30),
+    legend.text = element_text(size = 10),
     legend.position = "top",
-    plot.caption = element_text(size = 25)
+    plot.caption = element_text(size = 10, lineheight = 1.2, margin = ggplot2::margin(t = 10)),
+    plot.margin = ggplot2::margin(5, 30, 5, 5)
   )
 ```
 
@@ -2373,7 +2472,7 @@ sengage_tab_data <- sengage_type_data |>
 
   <div class="col-sm-9">
 
-```{r exper-learning-plot}
+```{r exper-learning-plot, fig.height=9}
 exper_learning_data |>
   
   dplyr::mutate(dim1 = stringr::str_replace(dim1,
@@ -2393,25 +2492,33 @@ exper_learning_data |>
   ) |>
   
   mutate(measure = factor(measure, levels = c('Mean','Median','Max','Your School'))) |>
+  dplyr::mutate(dim1 = forcats::fct_reorder(dim1, exper, .fun = max, .desc = TRUE)) |>
   
-  ggplot2::ggplot(ggplot2::aes(reorder(dim1,-exper),exper, fill = measure))+
+  ggplot2::ggplot(ggplot2::aes(dim1, exper, fill = measure))+
   
   ggplot2::geom_hline(yintercept = c(0,25,50,75,100), colour = "grey")+
-  ggplot2::geom_bar(ggplot2::aes(fill = measure),
-                    stat = "identity",
-                    position = "dodge")+
-   geom_text(
-    aes(label = round(exper,0)),
-    colour = "white", size = 8,
-    vjust = 1.4, position = position_dodge(.9)
-    )+
+  ggplot2::geom_col(
+    ggplot2::aes(fill = measure),
+    stat = "identity",
+    position = ggplot2::position_dodge(width = 0.8),
+    width = 0.7
+  )+
+  ggplot2::geom_text(
+    ggplot2::aes(label = round(exper,0)),
+    colour = "black",
+    size = 3.8,
+    hjust = -0.2,
+    position = ggplot2::position_dodge(width = 0.8)
+  )+
   ggplot2::scale_x_discrete(
-    labels = function(x) stringr::str_wrap(x, width = 12)
-    )+
+    labels = function(x) stringr::str_wrap(x, width = 32)
+  )+
+  ggplot2::coord_flip(clip = "off")+
+  ggplot2::scale_y_continuous(limits = c(0,105), breaks = c(0,25,50,75,100))+
   ggplot2::labs(
     x = NULL,
     y = "% of Students",
-    caption = "*Internship, pre-licensure field experience, mentored experience or similar professional experience\n **Including pre-licensure field experience, NOT including mentored undergraduate research"
+    caption = "*Internship, pre-licensure field experience, mentored experience or similar professional experience\n**Including pre-licensure field experience, NOT including mentored undergraduate research"
   )+
   ggplot2::scale_fill_manual(
     values=c(Mean = "#6AD4BF",
@@ -2421,16 +2528,18 @@ exper_learning_data |>
     )
   )+
   ggplot2::theme(
-    plot.caption = ggplot2::element_text(size = 20, 
-                                         margin = ggplot2::margin(t = "10")),
-    text = ggplot2::element_text(size = 45, family = params$plotfont,
+    plot.caption = ggplot2::element_text(size = 10, lineheight = 1.2,
+                                         margin = ggplot2::margin(t = 15)),
+    text = ggplot2::element_text(size = 16, family = params$plotfont,
                                  lineheight = .5),
-    axis.text.x = ggplot2::element_text(size = 25, colour = "black"),
+    axis.text.x = ggplot2::element_text(size = 12, lineheight = 1.1, colour = "black"),
+    axis.text.y = ggplot2::element_text(size = 12, lineheight = 1.1, colour = "black"),
     panel.background = ggplot2::element_blank(),
     axis.ticks = ggplot2::element_blank(),
     legend.position = "top",
-    legend.text = element_text(size = 30),
-    legend.title = ggplot2::element_blank()
+    legend.text = element_text(size = 10),
+    legend.title = ggplot2::element_blank(),
+    plot.margin = ggplot2::margin(5, 30, 5, 5)
   )
 
 ```
@@ -2526,7 +2635,7 @@ total_budget |>
     nudge_y=2,
     nudge_x = -3,
     color = "black",
-    size = 15,
+    size = 5,
     family = params$plotfont
   )+
   labs(
@@ -2539,11 +2648,11 @@ total_budget |>
   scale_y_continuous(breaks = c(0,1,2,3),
                      labels = c("0","1","2","$3"))+
   theme(
-    text = element_text(family = params$plotfont, size = 40),
+    text = element_text(family = params$plotfont, size = 14),
     panel.background = element_blank(),
     axis.ticks = element_blank(),
     axis.text.x = element_blank(),
-    legend.text = element_text(size = 25),
+    legend.text = element_text(size = 11),
     legend.title = element_blank(),
     legend.position = "top"
   )
@@ -2594,7 +2703,7 @@ endow_exp_data |>
     nudge_y=1,
     nudge_x = -9,
     color = "black",
-    size = 15,
+    size = 5,
     family = params$plotfont
   )+
   
@@ -2607,12 +2716,12 @@ endow_exp_data |>
  # ggplot2::scale_y_continuous(labels = #c("0","0.5","1","1.5","$2"))+
   
   ggplot2::theme(
-    text = ggplot2::element_text(family = params$plotfont, size = 40),
+    text = ggplot2::element_text(family = params$plotfont, size = 14),
     panel.background = ggplot2::element_blank(),
     axis.text.x = ggplot2::element_blank(),
     axis.ticks = ggplot2::element_blank(),
     legend.title = ggplot2::element_blank(),
-    legend.text = ggplot2::element_text(size = 30)
+    legend.text = ggplot2::element_text(size = 10)
   )
 ```
 
@@ -2657,7 +2766,7 @@ gift_data |>
     nudge_y = 0.5,
     nudge_x = -2,
     color = "black",
-    size = 15,
+    size = 5,
     family = params$plotfont
   )+
   
@@ -2670,12 +2779,12 @@ gift_data |>
                               labels = c("0","0.5","1","$1.5"))+
   
   ggplot2::theme(
-    text = ggplot2::element_text(family = params$plotfont, size = 40),
+    text = ggplot2::element_text(family = params$plotfont, size = 14),
     panel.background = ggplot2::element_blank(),
     axis.text.x = ggplot2::element_blank(),
     axis.ticks = ggplot2::element_blank(),
     legend.title = ggplot2::element_blank(),
-    legend.text = ggplot2::element_text(size = 30)
+    legend.text = ggplot2::element_text(size = 10)
   )
 ```
 
@@ -2698,6 +2807,4 @@ gift_data |>
 
 <hr/>
 
-**Published May 2025, Data Analysis completed by St Olaf College**
-
-
+**Published `r format(Sys.Date(), "%B %Y")`, Data Analysis completed by St Olaf College**

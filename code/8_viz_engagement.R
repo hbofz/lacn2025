@@ -1,5 +1,11 @@
+# =============================================================================
+# 8_viz_engagement.R — Student and alumni engagement data preparation
+# Creates: sengage_year_data, sengage_type_data, appt_student_data,
+#          appt_alum_data, appt_fte_data, exper_learning_data
+# Consumed by: GeneralReport.Rmd (Engagement sections),
+#              custom_template.Rmd, validate_stolaf_report.R
+# =============================================================================
 library(tidyverse)
-#### Student Engagement by Class Year ####
 
 
 ## See sengage-year-plot code chunk

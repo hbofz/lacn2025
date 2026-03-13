@@ -1,0 +1,29 @@
+unique,q_type,Notes
+Q1,text,Respondent and institution metadata
+Q2,multi,Reporting structure (multi-select in 2025-26)
+Q3,single,Steps removed from President
+Q4,text,Performance metrics open-ended entries
+Q5,matrix,Student staff counts by role and level
+Q6,continuous,Professional staff totals and FTE
+Q7,matrix,Professional staff responsibilities
+Q8,multi,Conference/association engagement
+Q9,multi,Undergraduate services offered
+Q10,multi,Undergraduate programs offered
+Q11,single,Micro-credentials availability
+Q12,single,Micro-credential program description (open text; not visualized)
+Q13,multi,Micro-credential funding amounts
+Q14,single,Graduate services availability
+Q15,multi,Graduate services offered
+Q16,single,Alumni services availability
+Q17,multi,Alumni services scope
+Q18,multi,Alumni fee-for-service details
+Q19,matrix,Employer info sessions counts
+Q20,matrix,Employers participating counts
+Q21,continuous,Career trek and related activity counts
+Q22,matrix,Appointments and consultations
+Q23,matrix,Student engagement activity counts
+Q24,continuous,Experiential learning participation
+Q25,continuous,Operating budget components
+Q26,matrix,Non-operating budget components
+Q27,single,Data sharing permission
+Q28,single,Additional notes

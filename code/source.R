@@ -1,31 +1,26 @@
+library(tidyverse)
 
-# clear global env
-rm(list = ls())
+source(file.path("code", "00_cycle_config.R"))
+cycle_config <- ensure_cycle_config()
 
-# specify code location in parent dir
-code_location <- "~/lacn2025/code"
+scripts <- c(
+  "1_read_data.R",
+  "2_clean.R",
+  "3_functions.R",
+  "99_processing_functions.R",
+  "99_processing.R",
+  "4_viz_intro.R",
+  "5_viz_reporting.R",
+  "6_viz_services.R",
+  "7_viz_employer.R",
+  "8_viz_engagement.R",
+  "9_viz_budget.R"
+)
 
-# source basic cleaning and set-up
-#source(file.path(code_location, "1_read_data.R"))
-#source(file.path(code_location, "2_clean.R"))
-source(file.path(code_location, "3_functions.R"))
+for (script in scripts) {
+  message(sprintf("Sourcing %s", script))
+  source(file.path("code", script))
+}
 
-source(file.path(code_location, "99_processing_functions.R"))
-source(file.path(code_location, "99_processing.R"))
-
-
-# source viz set-up scripts
-source(file.path(code_location, "4_viz_intro.R"))
-source(file.path(code_location, "5_viz_reporting.R"))
-source(file.path(code_location, "6_viz_services.R"))
-
-source(file.path(code_location, "7_viz_employer.R"))
-source(file.path(code_location, "8_viz_engagement.R"))
-source(file.path(code_location, "9_viz_budget.R"))
-
-
-
-
-# save global environment in project directory
-save.image(file = "lacn.RData")
-
+save.image(file = cycle_config$rdata_path)
+message(sprintf("Saved analysis workspace to %s", cycle_config$rdata_path))
